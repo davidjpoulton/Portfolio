@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    overflow-x: hidden;
+}
+
+html {
+    height: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    background-image: url('imgs/space.jpg');
+    background-repeat: no-repeat;
+    font-family: 'Rubik', sans-serif;
+}
+
+h1 {
+    font-size: 5vw;
+    color: #dfe3ff;
+    -webkit-font-smoothing: antialiased;
+    font-weight: normal;
+}
+
+p {
+    font-size: 1.4vw;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    color: #dfe3ff;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------*/
+
+
+/*navbar*/
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-left: 2px solid #5a70d6;
+    animation-delay: 3s;
+    position: fixed;
+    top: 50%;
+    left: 75%;
+    transform: translate(0, -50%);
+}
+
+.navbar a {
+    color: #dfe3ff;
+    font-size: 1.6vw;
+    transition: color 0.3s ease;
+    padding-left: 50px;
+    padding-top: 12px;
+}
+
+.navbar a:hover {
+    color: #5a70d6;
+    font-weight: bold;
+}
+/*navbar*/
+
+/*home page*/
+.main {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mainText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.developer {
+    color: #5a70d6;
+    -webkit-font-smoothing: antialiased;
+}
+
+.smallText {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    color: rgb(209, 205, 209);
+    animation-delay: 5s;
+}
+
+#HTML {
+    color: tomato;
+}
+
+#CSS {
+    color: #63a714;
+}
+
+#react {
+    color: #4480da;
+}
+
+#javascript {
+    color: rgb(216, 216, 83);
+}
+
+.aboutMe {
+    animation-delay: 4.2s;
+}
+
+.myWork {
+    animation-delay: 3.8s;
+}
+
+.contactMe {
+    animation-delay: 4.6s;
+}
+
+.home {
+    animation-delay: 3s;
+}
+
+.skills {
+    animation-delay: 3.4s;
+}
+
+.helloFade {
+    animation-delay: 0.5s;
+}
+
+.webFade {
+    animation-delay: 1.8s;
+}
+/*home page*/
+
+/*about me page*/
+.aboutMe-main {
+    position: absolute;
+    top: 32%;
+    width: 50%;
+    left: 10%;
+}
+
+.aboutme-text {
+    display: flex;
+    justify-content: start;
+    margin-top: 20px;
+}
+
+.aboutme-title {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    color:#5a70d6;
+}
+/*about me page*/
+
+/*Skills page*/
+
+.skills-title {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    color:#5a70d6;
+}
+
+.grid img {
+    height: 150px;
+    width: auto;
+}
+.grid {
+    display: flex;
+    justify-content: space-around;
+    height: 220px;
+}
+
+.skills-expand-text {
+    display: flex;
+    justify-content: center;
+    animation-delay: 2s;
+    color: #dfe3ff;
+    letter-spacing: 1px;    
+    -webkit-font-smoothing: antialiased;
+    font-size: 1.5vw;
+}
+.css-icon {
+    animation-delay: 0.5s;
+}
+.html-icon {
+    animation-delay: 1.1s;
+}
+.javascript-icon {
+    animation-delay: 1.7s;
+}
+.react-icon {
+    animation-delay: 1.4s;
+}
+.jquery-icon {
+    animation-delay: 0.8s;
+}
+
+/*Skills page*/
+
+/*work page*/
+.work-title {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    color:#5a70d6;
+}
+
+/*work page*/
+.animated {
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+#purpleNav {
+    color: #5a70d6;
+    transition: color 0.3s ease;
+    padding-left: 50px;
+    font-weight: bold;
+}
+
