@@ -1,4 +1,1 @@
-
-function alert() {
-    alert("alert");
-}
+console.log('hello');
