@@ -115,18 +115,13 @@ body {
     margin-top: 20px;
 }
 
-#blue {
-    color: #55FFEB;
-    margin-right: 5px;
-}
-
 .button {
     width: 250px;
     height: 40px;
     left: 353px;
     top: 719px;
     background: #202020;
-    border: 3px solid #55FFEB;
+    border: 2px solid #55FFEB;
     box-sizing: border-box;
     font-size: 1.1em;
     color: white;
@@ -170,7 +165,7 @@ body {
     line-height: 40px;
 }
 
-#js-text {
+#box-header{
     color: #ffffff;
     font-weight: normal;
     font-size: 2.5em;
@@ -182,11 +177,16 @@ body {
     display: flex;
     flex-direction: column;
     text-align: left; 
-    opacity: .6;
     margin-top: 40px;
-    letter-spacing: .3px;
     overflow-y: scroll;
     height: 100%;
+    background-color: #272727c5;
+    padding: 20px 20px;
+    font-family: "Fira Code";
+}
+
+#blue {
+    color: #55FFEB;
 }
 
 @keyframes rotate {
@@ -203,28 +203,98 @@ body {
 
 @keyframes crazy {
     0% {
-        transform: rotateX(0deg) rotateY(0deg) translateZ(0px);
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+
+    25% {
+        transform: rotateY(360deg);
     }
 
     50% {
-        transform: rotateX(180deg) rotateY(180deg) translateX(0px);
+        transform: rotateX(180deg) rotateY(180deg);
         
     }
 
     100% {
-        transform: rotateX(360deg) rotateY(360deg) translateX(0px);
+        transform: rotateX(360deg) rotateY(360deg);
 
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    70% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    80% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        color: white;
+    }
+
+    90% {
+        color: white;
+    }
+
+    100% {
+        color: #55FFEB;
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        transform: translateY(-96px);
+    }
+
+    90% {
+        transform: translateY(-96px);
+    }
+
+    100% {
+        transform: translateY(0px);
     }
 }
 
 #animated-box {
     position: absolute;
     left: 67%;
-    top: 32%;
+    top: 35%;
     height: 300px;
     width: 300px;
     perspective: 1000px;
     perspective-origin: 50% 50%;
+    -webkit-animation: fadeIn 6s; 
+    -moz-animation: fadeIn 6s; 
+    -ms-animation: fadeIn 6s; 
+    -o-animation: fadeIn 6s; 
+    animation: fadeIn 6s;
 }
 
 .box {
@@ -241,8 +311,8 @@ body {
     position: absolute;
     width: 250px;
     height: 250px;
-    opacity: .4;
-    background-color: #0c0c0c;
+    opacity: 1;
+    background-color: #272727b2;
     border: 1px solid #55FFEB;
     box-shadow: inset 0 0 10px 10px rgba(85, 255, 235, 0.432);
     transition: all 1s ease;
@@ -262,8 +332,8 @@ body {
 #jQuery-png {
     position: relative;
     top: 55%;
-    left: -40%;
-    height: 80px;
+    left: -35%;
+    height: 70px;
     width: auto;
     animation: crazy 45s infinite;
     transform: translateZ(-70px);
@@ -281,23 +351,28 @@ body {
 #box-text {
     position: relative;
     top: 25%;
-    left: 5%;
+    left: -20%;
+    width: 500px;
     background-color: none;
     color:white;
-    font-size: 22px;
+    font-size: 20px;
+    opacity: 0;
+    transition: all 1s ease;
+    letter-spacing: .5px;
 }
 
-.box div:hover {
-    box-shadow: inset 0 0 20px 20px rgb(85, 255, 235);
+.box:hover ~ #box-text {
+    transform: translateY(50px); 
+    opacity: 1;
 }
 
 /* When the spinning box is hovered over, changed the sides translateZ property */
 .box:hover > div:nth-child(1) {
-    transform: rotateY(0deg) translateZ(160px);
+    transform: rotateY(0deg) translateZ(170px);
 }
 
 .box:hover > div:nth-child(2) {
-    transform: rotateY(90deg) rotateX(90deg) translateZ(160px);
+    transform: rotateY(90deg) rotateX(90deg) translateZ(170px);
 }
 
 .box:hover > div:nth-child(3) {
@@ -305,15 +380,15 @@ body {
 }
 
 .box:hover > div:nth-child(4) {
-    transform: rotateY(-90deg) rotateX(-90deg) translateZ(160px);
+    transform: rotateY(-90deg) rotateX(-90deg) translateZ(170px);
 }
 
 .box:hover > div:nth-child(5) {
-    transform: rotateY(90deg) translateZ(160px);
+    transform: rotateY(90deg) translateZ(170px);
 }
 
 .box:hover > div:nth-child(6) {
-    transform: rotateY(-90deg) translateZ(160px);
+    transform: rotateY(-90deg) translateZ(170px);
 }
 
 .box div:nth-child(1) {
@@ -339,6 +414,38 @@ body {
 .box div:nth-child(6) {
     transform: rotateY(-90deg) translateZ(125px);
 }
+
+/* individual id selecters for animation */
+#hey {
+    animation: fadeInUp 1s ease-in;
+}
+
+#im-david {
+    animation: fadeInUp 2s ease-in;
+}
+
+#web-developer {
+    
+    animation: fadeInUp 3.5s ease-in;
+}
+
+#animation-blue {
+    color: #55FFEB;
+    animation: colorChange 4s ease-in;
+}
+
+#front-end {
+    animation: fadeInUp 5.5s ease-in;
+}
+
+#button-animation {
+    animation: fadeInUp 5.5s ease-in;
+}
+
+
+
+
+
 
 
 

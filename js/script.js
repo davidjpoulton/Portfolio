@@ -5,3 +5,12 @@ $(document).ready(function(){
         $(".code-box").delay(600).fadeIn();
     });
 });
+
+$(document).ready(function(){
+    $("#box-header").click(function(){
+        $("#animated-box").fadeIn();
+        $(".code-box").fadeOut();
+    });
+});
+
+
