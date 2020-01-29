@@ -154,6 +154,7 @@ body {
 
 #dev-blue {
     color: #55FFEB;
+    animation: colorChange 5s ease;
 }
 /* ------------------------------------------------------------------ */
 
@@ -406,6 +407,34 @@ body {
 }
 /* ------------------------------------------------------------------------ */
 
+/* individual id selecters for animation */
+#hey {
+    animation: fadeInUp 1s ease-in;
+}
+
+#im-david {
+    animation: fadeInUp 2s ease-in;
+}
+
+#web-developer {
+    
+    animation: fadeInUp 3.5s ease-in;
+}
+
+#animation-blue {
+    color: #55FFEB;
+    animation: colorChange 4s ease-in;
+}
+
+#front-end {
+    animation: fadeInUp 5.5s ease-in;
+}
+
+#button-animation {
+    animation: fadeInUp 5.5s ease-in;
+}
+/* ----------------------------------------------------------------- */
+
 /* Keyframes */
 @keyframes rotate {
     from {
@@ -492,3 +521,12 @@ body {
 }
 
 /* --------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
