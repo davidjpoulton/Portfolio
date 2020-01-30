@@ -25,9 +25,9 @@ function toggleHtml() {
     let jsBox = document.getElementById("js-box");
 
     if (htmlBox.style.display = "none") {
-      htmlBox.style.display = "block";
-      cssBox.style.display = "none";
-      jsBox.style.display = "none";
+        htmlBox.style.display = "block";
+        cssBox.style.display = "none";
+        jsBox.style.display = "none";
     } 
 }
 
@@ -37,9 +37,9 @@ function toggleCss() {
     let jsBox = document.getElementById("js-box");
 
     if (cssBox.style.display = "none") {
-      htmlBox.style.display = "none";
-      cssBox.style.display = "block";
-      jsBox.style.display = "none";
+        htmlBox.style.display = "none";
+        cssBox.style.display = "block";
+        jsBox.style.display = "none";
     } 
 }
 
@@ -49,10 +49,11 @@ function toggleJs() {
     let jsBox = document.getElementById("js-box");
 
     if (jsBox.style.display = "none") {
-      htmlBox.style.display = "none";
-      cssBox.style.display = "none";
-      jsBox.style.display = "block";
+        htmlBox.style.display = "none";
+        cssBox.style.display = "none";
+        jsBox.style.display = "block";
     } 
 }
+
 
 

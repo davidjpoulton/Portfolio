@@ -13,19 +13,10 @@ a {
 }
 
 body {
-    background: linear-gradient(119.62deg, #333333 15.82%, #737373 114.38%);
+    background: linear-gradient(119.62deg, #333333 15.82%, #272727 114.38%);
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: "Philosopher";
-}
-
-/* used in the code box to add a small margin left of the text to create the css code */
-.ml {
-    margin-left: 30px;
-}
-/* used in the code box to add a small margin bottom of the text to create the css code */
-.mb {
-    margin-bottom: 20px;
 }
 /* -------------------------------------------------------------------------- */
 
@@ -92,7 +83,7 @@ body {
     font-family: "Kristi";
     font-style: normal;
     font-weight: normal;
-    font-size: 40px;
+    font-size: 36px;
 }
 
 #body-tag-bottom {
@@ -103,7 +94,7 @@ body {
     font-family: "Kristi";
     font-style: normal;
     font-weight: normal;
-    font-size: 40px;
+    font-size: 36px;
 }
 
 .introduction {
@@ -337,6 +328,27 @@ body {
     height: 80px;
     width: auto;
     animation: crazy 45s infinite;
+    transform: translateZ(70px);
+}
+
+#boot-png {
+    left: 10%;
+    top: -17%;
+    position: relative;
+    height: 80px;
+    width: auto;
+    animation: crazy 45s infinite;
+    transform: translateZ(70px);
+}
+
+#git-png {
+    left: 10%;
+    top: -17%;
+    position: relative;
+    height: 80px;
+    width: auto;
+    animation: crazy 45s infinite;
+    transform: translateZ(70px);
 }
 
 #box-text {

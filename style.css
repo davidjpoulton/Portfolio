@@ -13,7 +13,7 @@ a {
 }
 
 body {
-    background: linear-gradient(119.62deg, #333333 15.82%, #737373 114.38%);
+    background: linear-gradient(119.62deg, #333333 15.82%, #272727 114.38%);
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: "Philosopher";
@@ -34,7 +34,7 @@ body {
     position: relative;
     height: 96px;
     width: 100%;
-    background-color: #272727;
+    background-color: #202020;
     padding: 0;
 }
 
@@ -292,7 +292,7 @@ body {
     width: 250px;
     height: 250px;
     position: relative;
-    animation: rotate ease 60s infinite;
+    animation: rotate 60s infinite;
     z-index: 100;
 }
 
@@ -304,39 +304,57 @@ body {
     opacity: 1;
     background-color: #272727b2;
     border: 1px solid #55FFEB;
-    box-shadow: inset 0 0 10px 10px rgba(85, 255, 235, 0.432);
+    box-shadow: inset 0 0 20px 5px rgb(85, 255, 235);
     transition: all 1s ease;
     z-index: 99;
 }
 
 #html-png {
-    position: relative;
+    position: absolute;
     top: 40%;
     left: 60%;
     height: 80px;
     width: auto;
     animation: crazy 45s infinite;
-    transform: translateZ(70px);
+    transform: translateZ(1000px);
 }
 
 #js-png {
-    position: relative;
+    position: absolute;
     top: 55%;
     left: -35%;
     height: 70px;
     width: auto;
     animation: crazy 45s infinite;
-    transform: translateZ(-70px);
 }
 
 #css-png {
     left: 10%;
     top: 15%;
-    position: relative;
+    position: absolute;
     height: 80px;
     width: auto;
     animation: crazy 45s infinite;
 }
+
+#boot-png {
+    left: 10%;
+    top: -17%;
+    position: absolute;
+    height: 80px;
+    width: auto;
+    animation: crazy 45s infinite;
+}
+
+#git-png {
+    left: 10%;
+    top: -17%;
+    position: absolute;
+    height: 80px;
+    width: auto;
+    animation: crazy 45s infinite;
+}
+
 
 #box-text {
     position: relative;
@@ -354,6 +372,10 @@ body {
 .box:hover ~ #box-text {
     transform: translateY(50px); 
     opacity: 1;
+}
+
+.box img {
+    transform: translateZ(1000px);
 }
 
 /* When the spinning box is hovered over, changed the sides translateZ property */
@@ -492,3 +514,53 @@ body {
 }
 
 /* --------------------------------------------------------- */
+
+/* ABOUT PAGE CSS */
+#about-page {
+    overflow: hidden;
+}
+
+#about-me-title {
+    position: absolute;
+    width: 393px;
+    height: 108px;
+    left: 143px;
+    top: 230px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 4em;
+    line-height: 108px;
+    color: #55FFEB;
+}
+
+#about-me-text {
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    left: 161px;
+    top: 370px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1em;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+#about-me-text p {
+    margin-bottom: 15px;
+}
+
+#globe {
+    position: absolute;
+    left: 50%;
+    top: 25%;
+}
+
+#globe img {
+    height:1000px;
+    width: auto
+}
+    
+
+
+
