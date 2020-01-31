@@ -296,7 +296,6 @@ body {
     z-index: 100;
 }
 
-
 .box div{
     position: absolute;
     width: 250px;
@@ -310,19 +309,18 @@ body {
 }
 
 #html-png {
-    position: absolute;
     top: 40%;
     left: 60%;
     height: 80px;
     width: auto;
     animation: crazy 45s infinite;
-    transform: translateZ(1000px);
+    transform: translateY(1000px);
 }
 
 #js-png {
     position: absolute;
     top: 55%;
-    left: -35%;
+    left: 35%;
     height: 70px;
     width: auto;
     animation: crazy 45s infinite;
@@ -355,7 +353,6 @@ body {
     animation: crazy 45s infinite;
 }
 
-
 #box-text {
     position: relative;
     top: 25%;
@@ -372,10 +369,6 @@ body {
 .box:hover ~ #box-text {
     transform: translateY(50px); 
     opacity: 1;
-}
-
-.box img {
-    transform: translateZ(1000px);
 }
 
 /* When the spinning box is hovered over, changed the sides translateZ property */
@@ -560,7 +553,52 @@ body {
     height:1000px;
     width: auto
 }
+
+/* ---------------------------------------- */
     
+/* SKILLS PAGE */
+
+#skills-title {
+    position: absolute;
+    width: autopx;
+    height: 108px;
+    left: 143px;
+    top: 230px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 4em;
+    line-height: 108px;
+    color: #55FFEB;
+}
+
+#skills-text {
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    left: 161px;
+    top: 370px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1em;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+
+#skills p {
+    margin-bottom: 15px;
+}
+
+/* ------------------------------------------------ */
+
+/* JavaScript Node Effect For home page */
+
+#canvas1 {
+    left: 50%;
+    position: absolute;
+    height: 600px;
+    width: 50%;
+}
 
 
 
