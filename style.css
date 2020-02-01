@@ -509,9 +509,7 @@ body {
 /* --------------------------------------------------------- */
 
 /* ABOUT PAGE CSS */
-#about-page {
-    overflow: hidden;
-}
+
 
 #about-me-title {
     position: absolute;
@@ -545,28 +543,27 @@ body {
 
 #globe {
     position: absolute;
-    left: 50%;
+    left: 45%;
     top: 25%;
 }
 
 #globe img {
-    height:1000px;
+    height: 1300px;
     width: auto
 }
 
 /* ---------------------------------------- */
     
 /* SKILLS PAGE */
-
 #skills-title {
     position: absolute;
-    width: autopx;
+    width: auto;
     height: 108px;
     left: 143px;
     top: 230px;
     font-style: normal;
     font-weight: normal;
-    font-size: 4em;
+    font-size: 3.6em;
     line-height: 108px;
     color: #55FFEB;
 }
@@ -584,21 +581,109 @@ body {
     color: #FFFFFF;
 }
 
-
-#skills p {
-    margin-bottom: 15px;
-}
-
 /* ------------------------------------------------ */
 
-/* JavaScript Node Effect For home page */
-
-#canvas1 {
-    left: 50%;
+/* contact page */
+#contact-page {
+    overflow: hidden;
+}
+#contact-title {
     position: absolute;
-    height: 600px;
-    width: 50%;
+    width: auto;
+    height: 108px;
+    left: 220px;
+    top: 150px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3.6em;
+    line-height: 108px;
+    color: #55FFEB;
 }
 
+#contact-text {
+    position: absolute;
+    height: 300px;
+    left: 150px;
+    top: 260px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1em;
+    line-height: 23px;
+    color: #FFFFFF;
+    width: 460px;
+}
+
+#form-container {
+    position: absolute;
+    top: 350px;
+    left: 150px;
+    width: 460px;
+    height: 600px;
+}
+
+.form-half-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form-half {
+    background: #2b2b2b;
+    border: 1px solid #202020;
+    width: 220px;
+    height: 30px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Philosopher';
+}
+
+#form-long {
+    background: #2b2b2b;
+    border: 1px solid #202020;
+    width: 100%;
+    height: 30px;
+    margin-top: 20px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Philosopher';
+}
+
+#form-message {
+    background: #2b2b2b;
+    border: 1px solid #202020;
+    width: 100%;
+    height: 140px;
+    margin-top: 20px;
+    padding-top: 5px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Philosopher';
+}
+
+::placeholder{
+    color: #B5B5B5;
+    font-family: 'Philosopher';
+    font-size: 18px;
+    margin-top: 5px;
+    padding-left: 10px;
+}
+
+.form-button {
+    width: 200px;
+    height: 40px;
+    background: #202020;
+    border: 2px solid #55FFEB;
+    box-sizing: border-box;
+    font-size: 1.1em;
+    color: white;
+    font-family: "Philosopher";
+    transition: all 0.1s ease;
+    margin: 30px 0 0 120px;
+}
+
+.form-button:hover {
+    box-shadow: 0 0 3px 3px #55FFEB;
+    cursor: pointer;
+}
 
 
