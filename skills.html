@@ -44,13 +44,15 @@
     <div id="skills-text">
         <p>My skills are focused towards front-end development & design.</p>
         <br>
-        <p>HTML, CSS / SCSS, JavaScript / jQuery, Bootstrap and version control using git. Open source CMS using WordPress and Drupal.</p>
+        <p>HTML, CSS / SCSS, JavaScript / jQuery, Bootstrap and version control using git. Open source CMS using
+            WordPress and Drupal.</p>
         <br>
-        <p>I have built completely vanilla websites using HTML/CSS/JS for clients so they could get their website exactly how they wanted.</p>
+        <p>I have built completely vanilla websites using HTML/CSS/JS for clients so they could get their website
+            exactly how they wanted.</p>
     </div>
-    
-     <!--CSS code that appears when "floating box" is clicked-->
-     <section id="css-box">
+
+    <!--CSS code that appears when "floating box" is clicked-->
+    <section id="css-box">
         <img class="back-arrow" src="imgs/back-arrow.png" alt="">
         <div id="code-title">
             <h4 onclick="toggleHtml()" class="glow" id="HTML">HTML</h4>
@@ -59,10 +61,9 @@
             <div class="divider"></div>
             <h4 onclick="toggleJs()" class="glow" id="SCRIPT">JavaScript</h4>
         </div>
-        <div class="code-css">
+        <div class="code-box">
             <pre>
 /* General */
-
 * {
     margin: 0;
     padding: 0;
@@ -77,28 +78,19 @@ a {
 }
 
 body {
-    background: linear-gradient(119.62deg, 
-    #333333 15.82%, #737373 114.38%);
+    background: linear-gradient(119.62deg, #333333 15.82%, #272727 114.38%);
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: "Philosopher";
 }
-
-.ml {
-    margin-left: 30px;
-}
-
-.mb {
-    margin-bottom: 20px;
-}
+-------------------------------------------------------------------------- */
 
 /* navigation */
-
 .nav {
     position: relative;
     height: 96px;
     width: 100%;
-    background-color: #272727;
+    background-color: #202020;
     padding: 0;
 }
 
@@ -145,9 +137,9 @@ body {
     font-size: 2.5em;
     font-weight: normal;
 }
+/* -------------------------------------------------------- */
 
 /* Body tags and introduction section */
-
 #body-tag-top {
     position: absolute;
     left: 1.5%;
@@ -218,13 +210,10 @@ body {
 
 #dev-blue {
     color: #55FFEB;
-    animation: colorChange 5s ease;
 }
+/* ------------------------------------------------------------------ */
 
-
-/* different boxes of code that appear 
-when the floating box is clicked */
-
+/* different boxes of code that appear when the floating box is clicked */
 .divider {
     width: 4px;
     height: 40px;
@@ -340,12 +329,12 @@ when the floating box is clicked */
 .glow:hover {
     text-shadow: 0 0 5px rgb(0, 0, 0);
 }
+/* ------------------------------------------------------------------ */
 
 /* Floating animated box */
-
 #animated-box {
     position: absolute;
-    left: 67%;
+    left: 70%;
     top: 35%;
     height: 300px;
     width: 300px;
@@ -359,10 +348,9 @@ when the floating box is clicked */
     width: 250px;
     height: 250px;
     position: relative;
-    animation: rotate ease 60s infinite;
+    animation: rotate 60s infinite;
     z-index: 100;
 }
-
 
 .box div{
     position: absolute;
@@ -371,35 +359,51 @@ when the floating box is clicked */
     opacity: 1;
     background-color: #272727b2;
     border: 1px solid #55FFEB;
-    box-shadow: inset 0 0 10px 10px rgba(85, 255, 235,);
+    box-shadow: inset 0 0 20px 5px rgb(85, 255, 235);
     transition: all 1s ease;
     z-index: 99;
 }
 
 #html-png {
     position: relative;
-    top: 40%;
-    left: 60%;
+    top: 60%;
+    left: 25%;
     height: 80px;
     width: auto;
     animation: crazy 45s infinite;
-    transform: translateZ(70px);
 }
 
 #js-png {
     position: relative;
-    top: 55%;
-    left: -35%;
-    height: 70px;
+    top: 60%;
+    left: 10%;
+    height: px;
     width: auto;
     animation: crazy 45s infinite;
-    transform: translateZ(-70px);
 }
 
 #css-png {
-    left: 10%;
-    top: 15%;
     position: relative;
+    left: 18%;
+    top: 15%;
+    height: 80px;
+    width: auto;
+    animation: crazy 45s infinite;
+}
+
+#boot-png {
+    position: relative;
+    left: 5%;
+    top: -17%;
+    height: 80px;
+    width: auto;
+    animation: crazy 45s infinite;
+}
+
+#git-png {
+    position: relative;
+    left: 20%;
+    top: -17%;
     height: 80px;
     width: auto;
     animation: crazy 45s infinite;
@@ -423,16 +427,13 @@ when the floating box is clicked */
     opacity: 1;
 }
 
-/* When the spinning box is hovered over, 
-changed the sides translateZ property */
-
+/* When the spinning box is hovered over, changed the sides translateZ property */
 .box:hover > div:nth-child(1) {
     transform: rotateY(0deg) translateZ(170px);
 }
 
 .box:hover > div:nth-child(2) {
-    transform: rotateY(90deg) rotateX(90deg) 
-    translateZ(170px);
+    transform: rotateY(90deg) rotateX(90deg) translateZ(170px);
 }
 
 .box:hover > div:nth-child(3) {
@@ -440,8 +441,7 @@ changed the sides translateZ property */
 }
 
 .box:hover > div:nth-child(4) {
-    transform: rotateY(-90deg) rotateX(-90deg) 
-    translateZ(170px);
+    transform: rotateY(-90deg) rotateX(-90deg) translateZ(170px);
 }
 
 .box:hover > div:nth-child(5) {
@@ -457,8 +457,7 @@ changed the sides translateZ property */
 }
 
 .box div:nth-child(2) {
-    transform: rotateY(90deg) rotateX(90deg) 
-    translateZ(125px);
+    transform: rotateY(90deg) rotateX(90deg) translateZ(125px);
 }
 
 .box div:nth-child(3) {
@@ -466,8 +465,7 @@ changed the sides translateZ property */
 }
 
 .box div:nth-child(4) {
-    transform: rotateY(-90deg) rotateX(-90deg) 
-    translateZ(125px);
+    transform: rotateY(-90deg) rotateX(-90deg) translateZ(125px);
 }
 
 .box div:nth-child(5) {
@@ -477,37 +475,9 @@ changed the sides translateZ property */
 .box div:nth-child(6) {
     transform: rotateY(-90deg) translateZ(125px);
 }
-
-/* individual id selecters for animation */
-
-#hey {
-    animation: fadeInUp 1s ease-in;
-}
-
-#im-david {
-    animation: fadeInUp 2s ease-in;
-}
-
-#web-developer {
-    
-    animation: fadeInUp 3.5s ease-in;
-}
-
-#animation-blue {
-    color: #55FFEB;
-    animation: colorChange 4s ease-in;
-}
-
-#front-end {
-    animation: fadeInUp 5.5s ease-in;
-}
-
-#button-animation {
-    animation: fadeInUp 5.5s ease-in;
-}
+/* ------------------------------------------------------------------------ */
 
 /* Keyframes */
-
 @keyframes rotate {
     from {
         transform: rotateX(0deg) rotateY(0deg);
@@ -591,8 +561,192 @@ changed the sides translateZ property */
         color: #55FFEB;
     }
 }
+
+/* --------------------------------------------------------- */
+
+/* ABOUT PAGE CSS */
+
+
+#about-me-title {
+    position: absolute;
+    width: 393px;
+    height: 108px;
+    left: 143px;
+    top: 230px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 4em;
+    line-height: 108px;
+    color: #55FFEB;
+}
+
+#about-me-text {
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    left: 161px;
+    top: 370px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1em;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+#about-me-text p {
+    margin-bottom: 15px;
+}
+
+#globe {
+    position: absolute;
+    left: 45%;
+    top: 25%;
+}
+
+#globe img {
+    height: 1300px;
+    width: auto
+}
+
+/* ---------------------------------------- */
+    
+/* SKILLS PAGE */
+#skills-title {
+    position: absolute;
+    width: auto;
+    height: 108px;
+    left: 143px;
+    top: 230px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3.6em;
+    line-height: 108px;
+    color: #55FFEB;
+}
+
+#skills-text {
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    left: 161px;
+    top: 370px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1em;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+/* ------------------------------------------------ */
+
+/* contact page */
+#contact-page {
+    overflow: hidden;
+}
+#contact-title {
+    position: absolute;
+    width: auto;
+    height: 108px;
+    left: 220px;
+    top: 150px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3.6em;
+    line-height: 108px;
+    color: #55FFEB;
+}
+
+#contact-text {
+    position: absolute;
+    height: 300px;
+    left: 150px;
+    top: 260px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1em;
+    line-height: 23px;
+    color: #FFFFFF;
+    width: 460px;
+}
+
+#form-container {
+    position: absolute;
+    top: 350px;
+    left: 150px;
+    width: 460px;
+    height: 600px;
+}
+
+.form-half-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form-half {
+    background: #2b2b2b;
+    border: 1px solid #202020;
+    width: 220px;
+    height: 30px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Philosopher';
+}
+
+#form-long {
+    background: #2b2b2b;
+    border: 1px solid #202020;
+    width: 100%;
+    height: 30px;
+    margin-top: 20px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Philosopher';
+}
+
+#form-message {
+    background: #2b2b2b;
+    border: 1px solid #202020;
+    width: 100%;
+    height: 140px;
+    margin-top: 20px;
+    padding-top: 5px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Philosopher';
+}
+
+::placeholder{
+    color: #B5B5B5;
+    font-family: 'Philosopher';
+    font-size: 18px;
+    margin-top: 5px;
+    padding-left: 10px;
+}
+
+.form-button {
+    width: 200px;
+    height: 40px;
+    background: #202020;
+    border: 2px solid #55FFEB;
+    box-sizing: border-box;
+    font-size: 1.1em;
+    color: white;
+    font-family: "Philosopher";
+    transition: all 0.1s ease;
+    margin: 30px 0 0 120px;
+}
+
+.form-button:hover {
+    box-shadow: 0 0 3px 3px #55FFEB;
+    cursor: pointer;
+}
+
+
+ 
             </pre>
         </div>
+        <button onclick="enlargeBox()" class="enlarge-button">Enlarge Box</button>
     </section>
 
     <!--HTML code that appears when "HTML" is clicked-->
@@ -605,23 +759,25 @@ changed the sides translateZ property */
             <div class="divider"></div>
             <h4 onclick="toggleJs()" class="glow">JavaScript</h4>
         </div>
-        <div class="code-html">
+        <div class="code-box">
             <!-- Long code that displays the html in text format in the box -->
-            <pre>              
+            <pre>
 &lt;!DOCTYPE html>
-html lang="en">
-                
+&lt;html lang="en">
+
 &lt;head>
 &lt;meta charset="UTF-8">
 &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
 &lt;meta http-equiv="X-UA-Compatible" content="ie=edge">
-&lt;link rel="stylesheet" href="index-style.css">
+&lt;link rel="stylesheet" href="style.css">
 &lt;link href="https://fonts.googleapis.com/css?family=Philosopher|Fira Code|Kristi&display=swap" rel="stylesheet">
 &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">&lt;/script>
 &lt;title>David Wilson&lt;/title>
 &lt;/head>
 
 &lt;body>
+
+    <!-- top navigation bar -->
     &lt;nav class="nav">
         &lt;a href="index.html">
             &lt;h2 id="logo">David Wilson&lt;/h2>
@@ -629,53 +785,56 @@ html lang="en">
         &lt;div class="links">
             &lt;ul>
                 &lt;li>
-                    &lt;a class="link-text" href="home.html">Home&lt;a>
+                    &lt;a class="link-text" href="home.html">Home&lt;/a>
                 &lt;/li>
                 &lt;li>
-                    &lt;a class="link-text" href="">About&lt;/a>
+                    &lt;a class="link-text" href="skills.html">Skills&lt;/a>
                 &lt;/li>
                 &lt;li>
-                    &lt;a class="link-text" href="">Work&lt;/a>
+                    &lt;a class="link-text" href="about.html">About&lt;/a>
                 &lt;/li>
                 &lt;li>
-                    &lt;a class="link-text" href="">Contact&lt;/a>
+                    &lt;a class="link-text" href="work.html">Work&lt;/a>
+                &lt;/li>
+                &lt;li>
+                    &lt;a class="link-text" href="contact.html">Contact&lt;/a>
                 &lt;/li>
             &lt;/ul>
         &lt;/div>
         &lt;h5 id="body-tag-top">&lt;body&gt;&lt;/h5>
     &lt;/nav>
 
-    &lt;section class="introduction">
-        &lt;h1 id="hey">Hey,&lt;/h1>
-        &lt;h1 id="im-david">I'm David.&lt;/h1>
-        &lt;h1 id="web-developer">Web &lt;span id="dev-blue">Developer&lt;/span>.&lt;/h1>
-        &lt;h4 id="front-end">Front End Development / Web Design&lt;/h4>
-        &lt;a href="work.html">
-            &lt;button id="button-animation" class="button">My latest projects&lt;/button>
-        &lt;/a>
-    &lt;section>
-
+    &lt;h1 id="skills-title">Skills & Experience&lt;/h1>
+    &lt;div id="skills-text">
+        &lt;p>My skills are focused towards front-end development & design.&lt;/p>
+        &lt;br>
+        &lt;p>HTML, CSS / SCSS, JavaScript / jQuery, Bootstrap and version control using git. Open source CMS using WordPress and Drupal.&lt;/p>
+        &lt;br>
+        &lt;p>I have built completely vanilla websites using HTML/CSS/JS for clients so they could get their website exactly how they wanted.&lt;/p>
+    &lt;/div>
+    
     &lt;section id="css-box">
         &lt;img class="back-arrow" src="imgs/back-arrow.png" alt="">
         &lt;div id="code-title">
-            &lt;h4 onclick="toggleHtml()" class="glow" id="HTML">HTML&lt;/h4>
+            &lt;h4 onclick="toggleHtml()" class="glow" id="HTML">HTML</h4>
             &lt;div class="divider">&lt;/div>
             &lt;h4 id="CSS" class="css-color glow">CSS&lt;/h4>
             &lt;div class="divider">&lt;/div>
             &lt;h4 onclick="toggleJs()" class="glow" id="SCRIPT">JavaScript&lt;/h4>
+            &lt;/div>
+        &lt;div class="code-css">  
         &lt;/div>
-    &lt;/section>
+    &lt;section>
 
     &lt;section id="html-box">
         &lt;img class="back-arrow" src="imgs/back-arrow.png" alt="">
-            &lt;div id="code-title">
-                &lt;h4 class="orange glow">HTML&lt;/h4>
-                &lt;div class="divider">&lt;/div>
-                &lt;h4 onclick="toggleCss()" class="glow" id="CSS">CSS&lt;/h4>
-                &lt;div class="divider">&lt;/div>
-                &lt;h4 onclick="toggleJs()" class="glow">JavaScript&lt;/h4>
-                &lt;div class="code-html">
-            &lt;/div>      
+        &lt;div id="code-title">
+            &lt;h4 class="orange glow">HTML&lt;/h4>
+            &lt;div class="divider">&lt;/div>
+            &lt;h4 onclick="toggleCss()" class="glow" id="CSS">CSS&lt;/h4>
+            &lt;div class="divider">&lt;/div>
+            &lt;h4 onclick="toggleJs()" class="glow">JavaScript&lt;/h4>
+        &lt;/div>
     &lt;/section>
 
     &lt;section id="js-box">
@@ -689,29 +848,35 @@ html lang="en">
         &lt;/div>
     &lt;/section>
 
+
+    <!-- animated floating box -->
     &lt;section id="animated-box">
         &lt;div class="box">
-            &lt;div class="side">&lt;/div>
-            &lt;div class="side">&lt;/div>
-            &lt;div class="side">&lt;/div>
-            &lt;div class="side">&lt;/div>
-            &lt;div class="side">&lt;/div>
-            &lt;div class="side">&lt;/div>
+            &lt;div>&lt;/div>
+            &lt;div>&lt;/div>
+            &lt;div>&lt;/div>
+            &lt;div>&lt;/div>
+            &lt;div>&lt;/div>
+            &lt;div>&lt;/div>
             &lt;img id="html-png" src="imgs/html5.png" alt="">
             &lt;img id="css-png" src="imgs/css.png" alt="">
             &lt;img id="js-png" src="imgs/javascript.png" alt="">
+            &lt;img id="boot-png" src="imgs/boot.png" alt="">
+            &lt;img id="git-png" src="imgs/git.png" alt="">
         &lt;/div>
         &lt;div id="box-text">Click cube to see the code running this page&lt;/div>
     &lt;/section>
+
 
     &lt;h5 id="body-tag-bottom"> &lt;/body&gt;&lt;/h5>
     
     &lt;script src="js/script.js">&lt;/script>
 
     &lt;body>
-&lt;/html>
+&lt;html>
             </pre>
         </div>
+        <button class="enlarge-button">Enlarge Box</button>
     </section>
 
     <!--JavaScript code that appears when "JavaScript" is clicked-->
@@ -724,11 +889,10 @@ html lang="en">
             <div class="divider"></div>
             <h4 class="yellow glow">JavaScript</h4>
         </div>
-        <div class="code-js">
+        <div class="code-box">
             <pre>
-// function to fadeout the floating box on click and
-fade in the code box
 
+// function to fadeout the floating box on click and fade in the code box
 $(document).ready(function(){
     $(".box").click(function(){
         $("#animated-box").fadeToggle();
@@ -737,9 +901,7 @@ $(document).ready(function(){
     });
 });
 
-//function to let the user go back to the floating 
-box if the arrow is pressed
-
+//function to let the user go back to the floating box if the arrow is pressed
 $(document).ready(function(){
     $(".back-arrow").click(function(){
         $("#animated-box").fadeIn("slow");
@@ -756,9 +918,9 @@ function toggleHtml() {
     let jsBox = document.getElementById("js-box");
 
     if (htmlBox.style.display = "none") {
-      htmlBox.style.display = "block";
-      cssBox.style.display = "none";
-      jsBox.style.display = "none";
+        htmlBox.style.display = "block";
+        cssBox.style.display = "none";
+        jsBox.style.display = "none";
     } 
 }
 
@@ -768,9 +930,9 @@ function toggleCss() {
     let jsBox = document.getElementById("js-box");
 
     if (cssBox.style.display = "none") {
-      htmlBox.style.display = "none";
-      cssBox.style.display = "block";
-      jsBox.style.display = "none";
+        htmlBox.style.display = "none";
+        cssBox.style.display = "block";
+        jsBox.style.display = "none";
     } 
 }
 
@@ -780,13 +942,19 @@ function toggleJs() {
     let jsBox = document.getElementById("js-box");
 
     if (jsBox.style.display = "none") {
-      htmlBox.style.display = "none";
-      cssBox.style.display = "none";
-      jsBox.style.display = "block";
+        htmlBox.style.display = "none";
+        cssBox.style.display = "none";
+        jsBox.style.display = "block";
     } 
 }
+
+
+
+
+ 
             </pre>
         </div>
+        <button class="enlarge-button">Enlarge Box</button>
     </section>
 
 
@@ -808,10 +976,9 @@ function toggleJs() {
         <div id="box-text">Click cube to see the code running this page</div>
     </section>
 
-
     <h5 id="body-tag-bottom"> &lt;/body&gt;</h5>
-    
     <script src="js/script.js"></script>
 
     <body>
+
 </html>

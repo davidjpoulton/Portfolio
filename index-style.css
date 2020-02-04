@@ -17,16 +17,19 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: "Philosopher";
+    height: 100%;
+    overflow: hidden;
 }
 /* -------------------------------------------------------------------------- */
 
 /* navigation */
 .nav {
-    position: relative;
     height: 96px;
     width: 100%;
     background-color: #202020;
     padding: 0;
+    animation: fadeInDown 8s;
+    display: none;
 }
 
 .links {
@@ -40,7 +43,6 @@ body {
 .links ul {
     display: flex;
     flex-direction: row;
-    
 }
 
 .links a {
@@ -83,7 +85,7 @@ body {
     font-family: "Kristi";
     font-style: normal;
     font-weight: normal;
-    font-size: 36px;
+    font-size: 40px;
 }
 
 #body-tag-bottom {
@@ -94,12 +96,14 @@ body {
     font-family: "Kristi";
     font-style: normal;
     font-weight: normal;
-    font-size: 36px;
+    font-size: 40px;
+    animation: fadeInUp 8.5s;
 }
 
 .introduction {
     position: absolute;
-    top: 27%;
+    top: 50%;
+    margin-top: -200px;
     left: 15%;
 }
 
@@ -124,10 +128,11 @@ body {
 }
 
 .button {
+    position: relative;
     width: 250px;
     height: 40px;
-    left: 353px;
-    top: 719px;
+    left: 10px;
+    top: 10px;
     background: #202020;
     border: 2px solid #55FFEB;
     box-sizing: border-box;
@@ -136,6 +141,7 @@ body {
     font-family: "Philosopher";
     margin: 35px 0 0 100px;
     transition: all 0.1s ease;
+    z-index: 110;
 }
 
 .button:hover {
@@ -145,132 +151,13 @@ body {
 
 #dev-blue {
     color: #55FFEB;
-    animation: colorChange 5s ease;
-}
-/* ------------------------------------------------------------------ */
-
-/* different boxes of code that appear when the floating box is clicked */
-.divider {
-    width: 4px;
-    height: 40px;
-    background: #707070;
-}
-
-.back-arrow {
-    position: absolute;
-    height: 50px;
-    width: auto;
-    top: 20%;
-    left: -10%;
-    cursor: pointer;
-}
-
-#css-box {
-    position: absolute;
-    top: 22%;
-    right: 7%;
-    height: 400px;
-    width: 480px;
-    display: none;
-}
-
-#code-title {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 100%;
-    color: white;
-    font-weight: normal;
-    font-size: 2.5em;
-    line-height: 40px;
-    cursor: pointer;
-}
-
-.code-css {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    text-align: left; 
-    margin-top: 40px;
-    overflow-y: scroll;
-    height: 100%;
-    background-color: #272727c5;
-    padding: 20px 20px;
-    font-family: "Fira Code";
-    font-size: 14px;
-}
-
-#html-box {
-    position: absolute;
-    top: 22%;
-    right: 7%;
-    height: 400px;
-    width: 480px;
-    display: none;
-}
-
-.code-html {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    text-align: left; 
-    margin-top: 40px;
-    overflow-y: scroll;
-    height: 100%;
-    background-color: #272727c5;
-    padding: 20px 20px;
-    font-family: "Fira Code";
-    font-size: 14px;
-}
-
-#js-box {
-    position: absolute;
-    top: 22%;
-    right: 7%;
-    height: 400px;
-    width: 480px;
-    display: none;
-}
-
-.code-js {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    text-align: left; 
-    margin-top: 40px;
-    overflow-y: scroll;
-    height: 100%;
-    background-color: #272727c5;
-    padding: 20px 20px;
-    font-family: "Fira Code";
-    font-size: 14px;
-}
-
-#blue {
-    color: #55FFEB;
-}
-
-.orange {
-    color: rgb(255, 141, 65);
-}
-
-.yellow {
-    color: rgb(255, 255, 92);
-}
-
-.css-color {
-    color: rgb(23, 209, 255);
-}
-
-.glow:hover {
-    text-shadow: 0 0 5px rgb(0, 0, 0);
 }
 /* ------------------------------------------------------------------ */
 
 /* Floating animated box */
 #animated-box {
     position: absolute;
-    left: 67%;
+    left: 40%;
     top: 35%;
     height: 300px;
     width: 300px;
@@ -284,10 +171,9 @@ body {
     width: 250px;
     height: 250px;
     position: relative;
-    animation: rotate ease 60s infinite;
+    animation: rotate 60s infinite;
     z-index: 100;
 }
-
 
 .box div{
     position: absolute;
@@ -296,59 +182,54 @@ body {
     opacity: 1;
     background-color: #272727b2;
     border: 1px solid #55FFEB;
-    box-shadow: inset 0 0 10px 10px rgba(85, 255, 235, 0.432);
+    box-shadow: inset 0 0 20px 5px rgb(85, 255, 235);
     transition: all 1s ease;
     z-index: 99;
 }
 
 #html-png {
     position: relative;
-    top: 40%;
-    left: 60%;
+    top: 60%;
+    left: 25%;
     height: 80px;
     width: auto;
     animation: crazy 45s infinite;
-    transform: translateZ(70px);
 }
 
 #js-png {
     position: relative;
-    top: 55%;
-    left: -35%;
+    top: 60%;
+    left: 10%;
     height: 70px;
     width: auto;
     animation: crazy 45s infinite;
-    transform: translateZ(-70px);
 }
 
 #css-png {
-    left: 10%;
-    top: 15%;
     position: relative;
+    left: 18%;
+    top: 15%;
     height: 80px;
     width: auto;
     animation: crazy 45s infinite;
-    transform: translateZ(70px);
 }
 
 #boot-png {
-    left: 10%;
-    top: -17%;
     position: relative;
+    left: 5%;
+    top: -17%;
     height: 80px;
     width: auto;
     animation: crazy 45s infinite;
-    transform: translateZ(70px);
 }
 
 #git-png {
-    left: 10%;
-    top: -17%;
     position: relative;
+    left: 20%;
+    top: -17%;
     height: 80px;
     width: auto;
     animation: crazy 45s infinite;
-    transform: translateZ(70px);
 }
 
 #box-text {
@@ -419,32 +300,38 @@ body {
 }
 /* ------------------------------------------------------------------------ */
 
+canvas {
+    position: absolute;
+    right: 1px;
+    z-index: 100;
+}
+
 /* individual id selecters for animation */
 #hey {
-    animation: fadeInUp 1s ease-in;
+    animation: fadeInUp 3s ease-in;
 }
 
 #im-david {
-    animation: fadeInUp 2s ease-in;
+    animation: fadeInUp 4s ease-in;
 }
 
 #web-developer {
-    
-    animation: fadeInUp 3.5s ease-in;
+    animation: fadeInUp 5.5s ease-in;
 }
 
 #animation-blue {
     color: #55FFEB;
-    animation: colorChange 4s ease-in;
+    animation: colorChange 6s ease-in;
 }
 
 #front-end {
-    animation: fadeInUp 5.5s ease-in;
+    animation: fadeInUp 7s ease-in;
 }
 
 #button-animation {
-    animation: fadeInUp 5.5s ease-in;
+    animation: fadeInUp 7s ease-in;
 }
+
 /* ----------------------------------------------------------------- */
 
 /* Keyframes */
@@ -483,13 +370,25 @@ body {
 @keyframes fadeIn {
     0% {
         opacity: 0;
+        transform: translateY(15px);
     }
 
+    70% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
     80% {
         opacity: 0;
+        transform: translateY(20px);
+    }
+
+    90% {
+        opacity: .1;
+        transform:translateY(-2px)
     }
     100% {
         opacity: 1;
+        transform: translateY(0);
     }
 }
 
@@ -515,6 +414,31 @@ body {
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-96px);
+    }
+
+    70% {
+        opacity: 0;
+        transform: translateY(-96px);
+    }
+    80% {
+        opacity: 0;
+        transform: translateY(-96px);
+    }
+
+    90% {
+        opacity: .1;
+        transform:translateY(-96px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        display: block;
     }
 }
 

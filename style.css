@@ -13,25 +13,17 @@ a {
 }
 
 body {
-    background: linear-gradient(119.62deg, #333333 15.82%, #272727 114.38%);
+    background: linear-gradient(119.62deg, #272727 15.82%, #1d1d1d 114.38%);
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: "Philosopher";
-}
-
-/* used in the code box to add a small margin left of the text to create the css code */
-.ml {
-    margin-left: 30px;
-}
-/* used in the code box to add a small margin bottom of the text to create the css code */
-.mb {
-    margin-bottom: 20px;
+    height: 100%;
+    overflow: hidden;
 }
 /* -------------------------------------------------------------------------- */
 
 /* navigation */
 .nav {
-    position: relative;
     height: 96px;
     width: 100%;
     background-color: #202020;
@@ -49,7 +41,6 @@ body {
 .links ul {
     display: flex;
     flex-direction: row;
-    
 }
 
 .links a {
@@ -133,10 +124,11 @@ body {
 }
 
 .button {
+    position: relative;
     width: 250px;
     height: 40px;
-    left: 353px;
-    top: 719px;
+    left: 10px;
+    top: 10px;
     background: #202020;
     border: 2px solid #55FFEB;
     box-sizing: border-box;
@@ -145,6 +137,7 @@ body {
     font-family: "Philosopher";
     margin: 35px 0 0 100px;
     transition: all 0.1s ease;
+    z-index: 110;
 }
 
 .button:hover {
@@ -157,128 +150,10 @@ body {
 }
 /* ------------------------------------------------------------------ */
 
-/* different boxes of code that appear when the floating box is clicked */
-.divider {
-    width: 4px;
-    height: 40px;
-    background: #707070;
-}
-
-.back-arrow {
-    position: absolute;
-    height: 50px;
-    width: auto;
-    top: 20%;
-    left: -10%;
-    cursor: pointer;
-}
-
-#css-box {
-    position: absolute;
-    top: 22%;
-    right: 7%;
-    height: 400px;
-    width: 480px;
-    display: none;
-}
-
-#code-title {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 100%;
-    color: white;
-    font-weight: normal;
-    font-size: 2.5em;
-    line-height: 40px;
-    cursor: pointer;
-}
-
-.code-css {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    text-align: left; 
-    margin-top: 40px;
-    overflow-y: scroll;
-    height: 100%;
-    background-color: #272727c5;
-    padding: 20px 20px;
-    font-family: "Fira Code";
-    font-size: 14px;
-}
-
-#html-box {
-    position: absolute;
-    top: 22%;
-    right: 7%;
-    height: 400px;
-    width: 480px;
-    display: none;
-}
-
-.code-html {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    text-align: left; 
-    margin-top: 40px;
-    overflow-y: scroll;
-    height: 100%;
-    background-color: #272727c5;
-    padding: 20px 20px;
-    font-family: "Fira Code";
-    font-size: 14px;
-}
-
-#js-box {
-    position: absolute;
-    top: 22%;
-    right: 7%;
-    height: 400px;
-    width: 480px;
-    display: none;
-}
-
-.code-js {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    text-align: left; 
-    margin-top: 40px;
-    overflow-y: scroll;
-    height: 100%;
-    background-color: #272727c5;
-    padding: 20px 20px;
-    font-family: "Fira Code";
-    font-size: 14px;
-}
-
-#blue {
-    color: #55FFEB;
-}
-
-.orange {
-    color: rgb(255, 141, 65);
-}
-
-.yellow {
-    color: rgb(255, 255, 92);
-}
-
-.css-color {
-    color: rgb(23, 209, 255);
-}
-
-.glow:hover {
-    text-shadow: 0 0 5px rgb(0, 0, 0);
-}
-/* ------------------------------------------------------------------ */
-
 /* Floating animated box */
 #animated-box {
     position: absolute;
-    left: 67%;
+    left: 65%;
     top: 35%;
     height: 300px;
     width: 300px;
@@ -309,45 +184,45 @@ body {
 }
 
 #html-png {
-    top: 40%;
-    left: 60%;
+    position: relative;
+    top: 60%;
+    left: 25%;
     height: 80px;
     width: auto;
     animation: crazy 45s infinite;
-    transform: translateY(1000px);
 }
 
 #js-png {
-    position: absolute;
-    top: 55%;
-    left: 35%;
+    position: relative;
+    top: 60%;
+    left: 10%;
     height: 70px;
     width: auto;
     animation: crazy 45s infinite;
 }
 
 #css-png {
-    left: 10%;
+    position: relative;
+    left: 18%;
     top: 15%;
-    position: absolute;
     height: 80px;
     width: auto;
     animation: crazy 45s infinite;
 }
 
 #boot-png {
-    left: 10%;
+    position: relative;
+    left: 5%;
     top: -17%;
-    position: absolute;
     height: 80px;
     width: auto;
     animation: crazy 45s infinite;
 }
 
 #git-png {
-    left: 10%;
+    position: relative;
+    left: 20%;
     top: -17%;
-    position: absolute;
     height: 80px;
     width: auto;
     animation: crazy 45s infinite;
@@ -555,6 +430,99 @@ body {
 /* ---------------------------------------- */
     
 /* SKILLS PAGE */
+
+
+/* different boxes of code that appear when the floating box is clicked */
+.divider {
+    width: 4px;
+    height: 40px;
+    background: #707070;
+}
+
+.back-arrow {
+    position: absolute;
+    height: 50px;
+    width: auto;
+    top: 20%;
+    left: -10%;
+    cursor: pointer;
+}
+
+#code-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    color: white;
+    font-weight: normal;
+    font-size: 2.5em;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.code-box {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: left; 
+    margin-top: 40px;
+    overflow-y: scroll;
+    height: 100%;
+    background-color: #272727c5;
+    padding: 20px 20px;
+    font-family: "Fira Code";
+    font-size: 14px;
+}
+
+#html-box {
+    position: absolute;
+    top: 22%;
+    right: 7%;
+    height: 400px;
+    width: 480px;
+    display: none;
+}
+
+#js-box {
+    position: absolute;
+    top: 22%;
+    right: 7%;
+    height: 400px;
+    width: 480px;
+    display: none;
+}
+
+#css-box {
+    position: absolute;
+    top: 22%;
+    right: 7%;
+    height: 400px;
+    width: 480px;
+    display: none;
+}
+
+
+
+#blue {
+    color: #55FFEB;
+}
+
+.orange {
+    color: rgb(255, 141, 65);
+}
+
+.yellow {
+    color: rgb(255, 255, 92);
+}
+
+.css-color {
+    color: rgb(23, 209, 255);
+}
+
+.glow:hover {
+    text-shadow: 0 0 5px rgb(0, 0, 0);
+}
+
 #skills-title {
     position: absolute;
     width: auto;
@@ -581,6 +549,20 @@ body {
     color: #FFFFFF;
 }
 
+.enlarge-button {
+    position: relative;
+    left: 5%;
+    width: 250px;
+    height: 40px;
+    background: #202020;
+    border: 2px solid #55FFEB;
+    box-sizing: border-box;
+    font-size: 1.1em;
+    color: white;
+    font-family: "Philosopher";
+    margin: 35px 0 0 100px;
+    transition: all 0.1s ease; 
+}
 /* ------------------------------------------------ */
 
 /* contact page */
@@ -687,3 +669,8 @@ body {
 }
 
 
+canvas {
+    position: absolute;
+    right: 1px;
+    z-index: 100;
+}
