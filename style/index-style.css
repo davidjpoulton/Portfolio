@@ -13,7 +13,7 @@ a {
 }
 
 body {
-    background: linear-gradient(119.62deg, #333333 15.82%, #272727 114.38%);
+    background: linear-gradient(119.62deg, #272727 15.82%, #1d1d1d 114.38%);
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: "Philosopher";
@@ -24,19 +24,17 @@ body {
 
 /* navigation */
 .nav {
-    height: 96px;
+    height: 70px;
     width: 100%;
     background-color: #202020;
     padding: 0;
-    animation: fadeInDown 8s;
-    display: none;
 }
 
 .links {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height: 96px;
+    height: 70px;
     margin-right: 50px;
 }
 
@@ -47,7 +45,7 @@ body {
 
 .links a {
     animation: color;
-    padding-bottom: 30.5px;
+    padding-bottom: 18px;
 }
 
 .links a:hover {
@@ -68,8 +66,8 @@ body {
 
 #logo {
     position: absolute;
-    left: 4%;
-    top: 25px;
+    left: 2%;
+    top: 12px;
     color: #55FFEB;
     font-size: 2.5em;
     font-weight: normal;
@@ -154,151 +152,6 @@ body {
 }
 /* ------------------------------------------------------------------ */
 
-/* Floating animated box */
-#animated-box {
-    position: absolute;
-    left: 40%;
-    top: 35%;
-    height: 300px;
-    width: 300px;
-    perspective: 1000px;
-    perspective-origin: 50% 50%;
-    cursor: pointer;
-}
-
-.box {
-    transform-style: preserve-3d;
-    width: 250px;
-    height: 250px;
-    position: relative;
-    animation: rotate 60s infinite;
-    z-index: 100;
-}
-
-.box div{
-    position: absolute;
-    width: 250px;
-    height: 250px;
-    opacity: 1;
-    background-color: #272727b2;
-    border: 1px solid #55FFEB;
-    box-shadow: inset 0 0 20px 5px rgb(85, 255, 235);
-    transition: all 1s ease;
-    z-index: 99;
-}
-
-#html-png {
-    position: relative;
-    top: 60%;
-    left: 25%;
-    height: 80px;
-    width: auto;
-    animation: crazy 45s infinite;
-}
-
-#js-png {
-    position: relative;
-    top: 60%;
-    left: 10%;
-    height: 70px;
-    width: auto;
-    animation: crazy 45s infinite;
-}
-
-#css-png {
-    position: relative;
-    left: 18%;
-    top: 15%;
-    height: 80px;
-    width: auto;
-    animation: crazy 45s infinite;
-}
-
-#boot-png {
-    position: relative;
-    left: 5%;
-    top: -17%;
-    height: 80px;
-    width: auto;
-    animation: crazy 45s infinite;
-}
-
-#git-png {
-    position: relative;
-    left: 20%;
-    top: -17%;
-    height: 80px;
-    width: auto;
-    animation: crazy 45s infinite;
-}
-
-#box-text {
-    position: relative;
-    top: 25%;
-    left: -20%;
-    width: 500px;
-    background-color: none;
-    color:white;
-    font-size: 20px;
-    opacity: 0;
-    transition: all 1s ease;
-    letter-spacing: .5px;
-}
-
-.box:hover ~ #box-text {
-    transform: translateY(50px); 
-    opacity: 1;
-}
-
-/* When the spinning box is hovered over, changed the sides translateZ property */
-.box:hover > div:nth-child(1) {
-    transform: rotateY(0deg) translateZ(170px);
-}
-
-.box:hover > div:nth-child(2) {
-    transform: rotateY(90deg) rotateX(90deg) translateZ(170px);
-}
-
-.box:hover > div:nth-child(3) {
-    transform: rotateY(180deg) translateZ(160px);
-}
-
-.box:hover > div:nth-child(4) {
-    transform: rotateY(-90deg) rotateX(-90deg) translateZ(170px);
-}
-
-.box:hover > div:nth-child(5) {
-    transform: rotateY(90deg) translateZ(170px);
-}
-
-.box:hover > div:nth-child(6) {
-    transform: rotateY(-90deg) translateZ(170px);
-}
-
-.box div:nth-child(1) {
-    transform: rotateY(0deg) translateZ(125px);
-}
-
-.box div:nth-child(2) {
-    transform: rotateY(90deg) rotateX(90deg) translateZ(125px);
-}
-
-.box div:nth-child(3) {
-    transform: rotateY(180deg) translateZ(125px);
-}
-
-.box div:nth-child(4) {
-    transform: rotateY(-90deg) rotateX(-90deg) translateZ(125px);
-}
-
-.box div:nth-child(5) {
-    transform: rotateY(90deg) translateZ(125px);
-}
-
-.box div:nth-child(6) {
-    transform: rotateY(-90deg) translateZ(125px);
-}
-/* ------------------------------------------------------------------------ */
 
 canvas {
     position: absolute;
@@ -321,7 +174,7 @@ canvas {
 
 #animation-blue {
     color: #55FFEB;
-    animation: colorChange 6s ease-in;
+    animation: colorChange 7s ease-in;
 }
 
 #front-end {
