@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/davidjpoulton/Portfolio#readme",
   "dependencies": {
-    "gsap": "^3.1.1"
+    "@dogstudio/highway": "^2.1.3",
+    "gsap": "^3.1.1",
+    "swup": "^2.0.8"
   }
 }

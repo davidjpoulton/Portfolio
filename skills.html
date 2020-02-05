@@ -6,48 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/transition.css">
     <link href="https://fonts.googleapis.com/css?family=Philosopher|Fira Code|Kristi&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <title>David Wilson</title>
+    <script defer src="node_modules/swup/dist/swup.min.js"></script>
+    <script defer src="/js/swup.js"></script>
+    
+    <title>David Wilson | Home </title>
 </head>
 
 <body>
 
-        <!-- top navigation bar -->
-        <nav class="nav">
-            <a href="index.html">
-                <h2 id="logo">David Wilson</h2>
-            </a>
-            <div class="links">
-                <ul>
-                    <li>
-                        <a class="link-text" href="home.html">Home</a>
-                    </li>
-                    <li>
-                        <a class="link-text" href="skills.html">Skills</a>
-                    </li>
-                    <li>
-                        <a class="link-text" href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a class="link-text" href="work.html">Work</a>
-                    </li>
-                    <li>
-                        <a class="link-text" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <h5 id="body-tag-top">skills.html</h5>
-        </nav>
+    <!-- top navigation bar -->
+    <nav class="nav">
+        <a href="index.html">
+            <h2 id="logo">David Wilson</h2>
+        </a>
+        <div class="links">
+            <ul>
+                <li>
+                    <a class="link-text" href="home.html">Home</a>
+                </li>
+                <li>
+                    <a class="link-text" href="skills.html">Skills</a>
+                </li>
+                <li>
+                    <a class="link-text" href="about.html">About</a>
+                </li>
+                <li>
+                    <a class="link-text" href="work.html">Work</a>
+                </li>
+                <li>
+                    <a class="link-text" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <h5 id="body-tag-top">skills.html</h5>
+    </nav>
 
+
+    <div id="swup" class="transition-fade">
         <h1 id="skills-title">Skills & Experience</h1>
         <div id="skills-text">
             <p>My skills are focused towards front-end development & design.</p>
             <br>
             <p>HTML, CSS / SCSS, JavaScript / jQuery, Bootstrap and version control using git. Open source CMS using
-            WordPress and Drupal.</p>
+                WordPress and Drupal.</p>
             <br>
-            <p>I started coding java back in 2016 but as of recently i have got into web development & design. I've been involved in the coding / development community since 2018, making websites for friends & family. </p>
+            <p>I started coding java back in 2016 but as of recently i have got into web development & design. I've been
+                involved in the coding / development community since 2018, making websites for friends & family. </p>
         </div>
 
         <!--CSS code that appears when "floating box" is clicked-->
@@ -956,7 +962,6 @@
             <button class="enlarge-button">Enlarge Box</button>
         </section>
 
-
         <!-- animated floating box -->
         <section id="animated-box">
             <div class="box">
@@ -974,11 +979,10 @@
             </div>
             <div id="box-text">Click cube to see the code running this page</div>
         </section>
+    </div>
+    <h5 id="body-tag-bottom">skills.html</h5>
 
-        <h5 id="body-tag-bottom">skills.html</h5>
-    </main>
+    <script src="/js/script.js"></script>
+</body>
 
-    <script src="js/script.js"></script>
-
-<body>
 </html>

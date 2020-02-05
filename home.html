@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/transition.css">
     <link href="https://fonts.googleapis.com/css?family=Philosopher|Fira Code|Kristi&display=swap" rel="stylesheet">
+    <script defer src="node_modules/swup/dist/swup.min.js"></script>
+    <script defer src="/js/swup.js"></script>
     <title>David Wilson | Home </title>
 </head>
 
@@ -14,33 +17,35 @@
 
     <!-- top navigation bar -->
     <nav class="nav">
-            <a href="index.html">
-                <h2 id="logo">David Wilson</h2>
-            </a>
-            <div class="links">
-                <ul>
-                    <li>
-                        <a class="link-text" href="/home.html">Home</a>
-                    </li>
-                    <li>
+        <a href="/index.html">
+            <h2 id="logo">David Wilson</h2>
+        </a>
+        <div class="links">
+            <ul>
+                <li>
+                    <a class="link-text" href="/home.html">Home</a>
+                </li>
+                <li>
                     <a class="link-text" href="/skills.html">Skills</a>
-                    </li>
-                    <li>
-                        <a class="link-text" href="/about.html">About</a>
-                    </li>
-                    <li>
-                        <a class="link-text" href="/work.html">Work</a>
-                    </li>
-                    <li>
-                        <a class="link-text" href="/contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
+                </li>
+                <li>
+                    <a class="link-text" href="/about.html">About</a>
+                </li>
+                <li>
+                    <a class="link-text" href="/work.html">Work</a>
+                </li>
+                <li>
+                    <a class="link-text" href="/contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <h5 id="body-tag-top">&lt;body&gt;</h5>
+
     </nav>
 
+    <div id="swup" class="transition-fade">
         <!-- Canvas  -->
-        <canvas id="canvas1"></canvas>
-
+        <canvas></canvas>
         <!-- introduction text -->
         <section class="introduction">
             <h1 id="hey">Hey,</h1>
@@ -49,7 +54,9 @@
             <h4 id="front-end">Front End Development / Web Design</h4>
             <button href="work.html" id="button-animation" class="button">My latest projects</button>
         </section>
+    </div>
+    
+    <h5 id="body-tag-bottom"> &lt;/body&gt;</h5>
+</body>
 
-    <script src="js/canvas.js"></script>
-<body>
 </html>

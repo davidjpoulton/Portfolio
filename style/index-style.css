@@ -78,7 +78,7 @@ body {
 #body-tag-top {
     position: absolute;
     left: 1.5%;
-    top: 120px;
+    top: 90px;
     color: #676767;
     font-family: "Kristi";
     font-style: normal;
@@ -95,13 +95,11 @@ body {
     font-style: normal;
     font-weight: normal;
     font-size: 40px;
-    animation: fadeInUp 8.5s;
 }
 
 .introduction {
     position: absolute;
-    top: 50%;
-    margin-top: -200px;
+    top: 27%;
     left: 15%;
 }
 
