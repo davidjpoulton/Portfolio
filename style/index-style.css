@@ -28,6 +28,7 @@ body {
     width: 100%;
     background-color: #202020;
     padding: 0;
+    border-bottom: 1px solid #313131;
 }
 
 .links {
@@ -46,19 +47,20 @@ body {
 .links a {
     animation: color;
     padding-bottom: 18px;
+    letter-spacing: 1px;
 }
 
 .links a:hover {
     color: #55FFEB;
-    transition: color .4s ease-in-out;
-    border-bottom: 3px solid #55FFEB;
+    transition: color .2s ease-in-out;
+    font-weight: bold;
 }
 
 .link-text {
     color: white;
     font-style: normal;
     font-weight: normal;
-    font-size: 26px;
+    font-size: 1.6em;
     line-height: 40px;
     letter-spacing: 0.025em;
     padding: 0 40px 0 
