@@ -241,6 +241,13 @@ body {
 #dev-blue {
     color: #55FFEB;
 }
+
+#mobile {
+    display: none;
+    font-size: 11vw;
+    color: white;
+    font-weight: normal;
+}
 /* ------------------------------------------------------------------ */
 
 /* Floating animated box */
@@ -734,7 +741,7 @@ body {
     width: 200px ;
     height: auto;
     left: 143px;
-    top: 30%;
+    top: 25%;
     font-style: normal;
     font-weight: bold;
     font-size: 3.6em;
@@ -1000,7 +1007,7 @@ canvas {
         position: absolute;
         left: 50%;
         margin-left: -50px;
-        top: 80%;
+        top: 83%;
         height: 100px;
         width: 100px; 
         z-index: 1;
@@ -1069,15 +1076,14 @@ canvas {
     }
 
     #skills-title {
-        position: absolute;
-        top: 7%;
+        top: 15%;
         left: 10%;
         font-size: 3em;
         width: 200px;
     }
 
     #skills-text {
-        top: 30%;
+        top: 34%;
         left: 10%;
         width: 80%;
         font-size: .9em;
@@ -1085,6 +1091,61 @@ canvas {
     }
 
     #hey {
-        font-size: 3em;
+        display: none;
+    }
+
+    #im-david {
+        display: none;  
+    }
+
+    #mobile {
+        display: block;
+    }
+
+    .introduction {
+        position: absolute;
+        top: 30%;
+        left: 5%;
+        text-align: center;
+    }
+
+    #logo {
+        font-size: 1.5em;
+        top: 23px;
+        left: 5%;
+    }
+
+    .button {
+        margin: 0;
+    }
+
+    #front-end {
+        font-size: 4vw;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    #web-developer {
+        font-size: 13vw;
+        line-height: 70px;
+    }
+
+    .icons-box {
+        position: absolute;
+        left: 50%;
+        margin-left: -133.5px;
+        top: 68%;
+    }
+
+    .icons {
+        height: 30px;
+        width: auto;
+        margin: 0 20px 0 0;
+    }
+
+    #code-pen {
+        height: 20px;
+        width: auto;
+        padding-bottom: 8px;
     }
 }
