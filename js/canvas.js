@@ -1,9 +1,9 @@
 (() => {
     const config = {
         dotMinRad: 2,
-        dotMaxRad: 18,
+        dotMaxRad: 15,
         sphereRad: 300,
-        bigDotRad: 35,
+        bigDotRad: 25,
         mouseSize: 55,
         massFactor: 0.002,
         defColor: `rgba(85, 255, 235, 0.9)`,
@@ -77,7 +77,7 @@
 
     function init() {
         w = canvas.width = window.innerWidth;
-        h = canvas.height = window.innerHeight;
+        h = canvas.height = window.innerHeight - 70;
 
         mouse = { x: w / 2, y: h / 2, down: false }
         dots = [];

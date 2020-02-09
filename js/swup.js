@@ -81,7 +81,7 @@ function bubbles() {
 
             function init() {
                 w = canvas.width = window.innerWidth;
-                h = canvas.height = window.innerHeight;
+                h = canvas.height = window.innerHeight -70;
 
                 mouse = { x: w / 2, y: h / 2, down: false }
                 dots = [];

@@ -10,50 +10,81 @@
     <link href="https://fonts.googleapis.com/css?family=Philosopher|Fira Code|Kristi&display=swap" rel="stylesheet">
     <script defer src="node_modules/swup/dist/swup.min.js"></script>
     <script defer src="/js/swup.js"></script>
-    
-    <title>David Wilson | Home </title>
+
+    <title>David Wilson | Skills </title>
 </head>
 
 <body>
-
     <!-- top navigation bar -->
     <nav class="nav">
-        <a href="index.html">
+        <div id="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+            <label for="checkbox"></label>
+            <input id="checkbox" type="checkbox">
+            <section id="burger-menu">
+                <ul>
+                    <li>
+                        <a class="burger-links" href="/home.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="burger-links" href="/skills.html">Skills</a>
+                    </li>
+                    <li>
+                        <a class="burger-links" href="/about.html">About</a>
+                    </li>
+                    <li>
+                        <a class="burger-links" href="/work.html">Work</a>
+                    </li>
+                    <li>
+                        <a class="burger-links" href="/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <a href="/index.html">
             <h2 id="logo">David Wilson</h2>
         </a>
         <div class="links">
             <ul>
                 <li>
-                    <a class="link-text" href="home.html">Home</a>
+                    <a class="link-text" href="/home.html">Home</a>
                 </li>
                 <li>
-                    <a class="link-text" href="skills.html">Skills</a>
+                    <a class="link-text" href="/skills.html">Skills</a>
                 </li>
                 <li>
-                    <a class="link-text" href="about.html">About</a>
+                    <a class="link-text" href="/about.html">About</a>
                 </li>
                 <li>
-                    <a class="link-text" href="work.html">Work</a>
+                    <a class="link-text" href="/work.html">Work</a>
                 </li>
                 <li>
-                    <a class="link-text" href="contact.html">Contact</a>
+                    <a class="link-text" href="/contact.html">Contact</a>
                 </li>
             </ul>
         </div>
-        <h5 id="body-tag-top">skills.html</h5>
-    </nav>
+        <h5 id="body-tag-top">&lt;body&gt;</h5>
 
+    </nav>
 
     <div id="swup" class="transition-fade">
         <h1 id="skills-title">Skills & Experience</h1>
         <div id="skills-text">
             <p>My skills are focused towards front-end development & design.</p>
             <br>
-            <p>HTML, CSS / SCSS, JavaScript / jQuery, Bootstrap and version control using git. Open source CMS using
-                WordPress and Drupal.</p>
+            <p>HTML, CSS / SCSS, JavaScript / PHP / jQuery, Bootstrap and version control using git. Open source CMS using
+            WordPress and Drupal.
+            </p>
             <br>
             <p>I started coding java back in 2016 but as of recently i have got into web development & design. I've been
-                involved in the coding / development community since 2018, making websites for friends & family. </p>
+            involved in the coding / development community since 2018, making websites for friends & family. 
+            </p>
+            <br>
+            <p>
+            This website was made using pure HTML, CSS, JavaScript & a little PHP.
+            </p>
         </div>
 
         <!--CSS code that appears when "floating box" is clicked-->
@@ -977,13 +1008,11 @@
                 <img id="boot-png" src="imgs/boot.png" alt="">
                 <img id="git-png" src="imgs/git.png" alt="">
             </div>
-            <div id="box-text">Click cube to see the code running this page   
+            <div id="box-text">Click cube to see the code running this page
             </div>
         </section>
     </div>
-
-    <h5 id="body-tag-bottom">skills.html</h5>
-
+    <h5 id="body-tag-bottom"> &lt;/body&gt;</h5>
     <script src="/js/script.js"></script>
 </body>
 
