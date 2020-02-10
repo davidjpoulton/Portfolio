@@ -868,9 +868,6 @@ canvas {
 /* Media Queries / Responsive */
 
 @media screen and (max-width: 1024px) {
-    #burger {
-        display: block;
-    }
 
     .links {
         display: none;
@@ -1329,9 +1326,7 @@ canvas {
     }
 }
 
-
-
-/* --------------------------------------------------------- */
+/*----------------------------------------------- */
 
 /* loading bar */
 
