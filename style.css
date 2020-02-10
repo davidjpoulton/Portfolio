@@ -71,10 +71,15 @@ body {
 #logo {
     position: absolute;
     left: 2%;
-    top: 16px;
+    top: 18px;
     color: #55FFEB;
     font-size: 2em;
     font-weight: normal;
+    opacity: .8;
+}
+
+#logo:hover {
+    opacity: 1;
 }
 
 
@@ -1069,7 +1074,7 @@ canvas {
     }
 
     #logo {
-        font-size: 1.5em;
+        font-size: 1.3em;
         top: 23px;
         left: 5%;
     }
