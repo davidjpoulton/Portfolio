@@ -534,6 +534,10 @@ body {
     margin-top: 50px;
 }
 
+.display-none {
+    display: none;
+}
+
 #code-pen {
     height: 31px;
     width: auto;
@@ -1135,6 +1139,10 @@ canvas {
         left: 50%;
         margin-left: -133.5px;
         top: 68%;
+    }
+
+    .display-none {
+        display: block;
     }
 
     .icons {
