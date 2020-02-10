@@ -1,6 +1,6 @@
 portfolio site TODO
 
->bug in the code box needs sorting out.
+> bug in the code box needs sorting out.
 
 > make mobile / burger
 
