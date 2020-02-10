@@ -1,26 +1,10 @@
 /* Body tags and introduction section */
-#body-tag-top {
-    position: absolute;
-    left: 1.5%;
-    top: 90px;
-    color: #676767;
-    font-family: "Kristi";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 40px;
-    animation: fadeInUp 5.5s ease;
+#body-tag-top-animated {
+    animation: fadeInLeft 5.5s ease;
 }
 
-#body-tag-bottom {
-    position: absolute;
-    bottom: 3%;
-    left: 1.5%;
-    color: #676767;
-    font-family: "Kristi";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 40px;
-    animation: fadeInUp 5.5s ease;
+#body-tag-bottom-animated {
+    animation: fadeInLeft 5.5s ease;
 }
 
 /* individual id selecters for animation */
@@ -29,6 +13,10 @@
 }
 
 #im-david {
+    animation: fadeInUp 2.5s ease-in;
+}
+
+#mobile {
     animation: fadeInUp 2.5s ease-in;
 }
 
@@ -133,6 +121,32 @@
         transform: translateY(0);
     }
 }
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-15px);
+    }
+
+    70% {
+        opacity: 0;
+        transform: translateX(-15px);
+    }
+    80% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    90% {
+        opacity: .1;
+        transform:translateX(-2px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 @keyframes fadeInDown {
     0% {
         opacity: 0;
@@ -172,6 +186,22 @@
         color: #55FFEB;
     }
 }
+
+@keyframes floating {
+    0% {
+        transform: translateY(-10px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+
 
 /* --------------------------------------------------------- */
 

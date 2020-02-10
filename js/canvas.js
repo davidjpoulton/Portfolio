@@ -6,9 +6,9 @@ click.onclick = function() {
         const config = {
             dotMinRad: 2,
             dotMaxRad: 18,
-            sphereRad: 300,
+            sphereRad: 350,
             bigDotRad: 25,
-            mouseSize: 55,
+            mouseSize: 100,
             massFactor: 0.002,
             defColor: `rgba(85, 255, 235, 0.9)`,
             smooth: 0.9,
