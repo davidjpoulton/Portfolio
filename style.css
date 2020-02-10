@@ -265,7 +265,7 @@ body {
 
 #mobile {
     display: none;
-    font-size: 11vw;
+    font-size: 2.9em;
     color: white;
     font-weight: normal;
 }
@@ -874,11 +874,11 @@ canvas {
 
 @media screen and (max-width: 768px) {
 
-    #body-tag-top {
+    #body-tag-top-animated {
         display: none;
     }
 
-    #body-tag-bottom {
+    #body-tag-bottom-animated {
         display: none;
     }
 
@@ -974,10 +974,6 @@ canvas {
         z-index: 1;
     }
     
-    #canvas1 {
-        display: none;
-    }
-
     .box {
         width: 100px;
         height: 100px;
@@ -1065,9 +1061,10 @@ canvas {
 
     .introduction {
         position: absolute;
-        top: 25%;
+        top: 45%;
+        margin-top: -201px;
         left: 50%;
-        margin-left: -215px;
+        margin-left: -163px;
         text-align: center;
     }
 
@@ -1080,16 +1077,17 @@ canvas {
     .button {
         margin: 0;
         z-index: 199;
+        width: 200px;
     }
 
     #front-end {
-        font-size: 4vw;
+        font-size: 1em;
         margin-top: 10px;
         margin-bottom: 20px;
     }
 
     #web-developer {
-        font-size: 13vw;
+        font-size: 3.1em;
         line-height: 70px;
     }
 
@@ -1117,7 +1115,7 @@ canvas {
     }
 
     #bubbles-wrapper {
-        top: 80%;
+        top: 70%;
         left: 50%;
         margin-left: -25px;
     }
