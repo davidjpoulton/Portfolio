@@ -13,6 +13,30 @@
 <body>
     <!-- top navigation bar -->
     <nav class="nav">
+        <div class="menu-wrap">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger"><div></div></div>
+            <div class="menu">
+                <div>
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="skills.html">Skills</a>
+                            </li>
+                            <li>
+                                <a href="about.html">About Me</a>
+                            </li>
+                            <li>
+                                <a href="work.html">My Work</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
         <a href="index.html">
             <h2 id="logo">David Wilson</h2>
         </a>
@@ -51,7 +75,9 @@
         <h2 id="mobile">Hey, i'm David.</h1>
         <h1 id="web-developer">Web <span id="dev-blue">Developer</span>.</h1>
         <h4 id="front-end">Front End Development / Web Design</h4>
-        <button href="contact.html" id="button-animation" class="button">Start Here!</button>
+        <form action="contact.html">
+            <input type="submit" value="Contact Me" class="button" id="button-animation">
+        </form>
     </section>
 
     <div id="bubbles-wrapper">
@@ -59,11 +85,19 @@
         <h1 id="bubbles-text">?</h1>
     </div>
 
-    <div class="icons-box">
-        <img class="icons" src="imgs/Linked-in.png" alt="">
-        <img class="icons" src="/imgs/github.png" alt="">
-        <img class="icons" src="/imgs/twitter.png" alt="">
-        <img id="code-pen" src="/imgs/code-pen.png" alt="">
+    <div class="icons-box display-none">
+        <a href="">
+            <img class="icons" src="imgs/Linked-in.png" alt="">
+        </a>
+        <a href="">
+            <img class="icons" src="/imgs/github.png" alt="">
+        </a>
+        <a href="">
+            <img class="icons" src="/imgs/twitter.png" alt="">
+        </a>
+        <a href="">
+            <img id="code-pen" src="/imgs/code-pen.png" alt="">
+        </a>
     </div>
 
     <h5 id="body-tag-bottom-animated"> &lt;/body&gt;</h5>
