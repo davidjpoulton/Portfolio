@@ -547,6 +547,7 @@ body {
 .cog-box:hover ~ #moving-container {
     animation-play-state: running;
     cursor: pointer;
+    touch-action: auto;
 }
 
 #moving-container {
@@ -1033,6 +1034,45 @@ canvas {
         left: 10%;
         width: 80%;
     }
+
+    #photo-container {
+       display: none;
+    }
+
+    #about-box {
+        width: 100%;
+        left: 10%;
+        top: 40%;
+    }
+
+    #about-me-text {
+        width: 80%;
+    }
+
+    #about-me-title {
+        top: 15%;
+        left: 10%;
+        font-size: 3em;
+    }
+
+    .hide-mobile {
+        display: none;
+    }
+
+    #form-container {
+        position: absolute;
+        top: 330px;
+        left: 50%;
+        width: 400px;
+        height: 600px;
+        margin-left: -200px;
+    }
+
+    #contact-text {
+        width: 400px;
+        margin-left: -200px;
+    }
+    
 }
 
 @media screen and (max-width: 500px) {
@@ -1057,7 +1097,6 @@ canvas {
         width: 100px;
         height: 100px;
         box-shadow: inset 0 0 10px 5px rgb(85, 255, 235);
-
     }
 
     #html-png {
@@ -1106,20 +1145,6 @@ canvas {
         transform: rotateY(-90deg) translateZ(50px);
     }
 
-    #skills-title {
-        top: 15%;
-        left: 10%;
-        font-size: 3em;
-        width: 200px;
-    }
-
-    #skills-text {
-        top: 34%;
-        left: 10%;
-        width: 80%;
-        font-size: 1em;
-        z-index: 10;
-    }
 
     #hey {
         display: none;
