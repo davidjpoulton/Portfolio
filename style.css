@@ -304,7 +304,6 @@ body {
     position: relative;
     width: 250px;
     height: 40px;
-    left: 10px;
     top: 10px;
     background: #202020;
     border: 1px solid #55FFEB;
@@ -1193,6 +1192,10 @@ canvas {
         top: 75%;
         left: 50%;
         margin-left: -25px;
+    }
+
+    #bubbles-text {
+        display: none;
     }
 }
 
