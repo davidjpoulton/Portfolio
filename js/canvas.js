@@ -1,5 +1,5 @@
 var click = document.getElementById('bubbles');
-var questionMark = document.getElementById("bubbles-text")
+var questionMark = document.getElementById("bubbles-text");
 
 click.onclick = function() {
     (() => {
@@ -125,9 +125,6 @@ click.onclick = function() {
         bubbles.style.display = "none";
         questionMark.style.display = "none";
     })();
-        
-    
-
 };
 
 
