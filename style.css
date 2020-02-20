@@ -23,6 +23,11 @@ body {
     padding: 0;
     overflow: hidden;
 }
+
+#current-page {
+    color: #55FFEB;
+    border-bottom: 1px solid #48CEBE;
+}
 /* -------------------------------------------------------------------------- */
 
 /* navigation */
@@ -71,7 +76,7 @@ body {
 #logo {
     position: absolute;
     left: 2%;
-    top: 18px;
+    top: 16px;
     color: #55FFEB;
     font-size: 2em;
     font-weight: normal;
@@ -1077,6 +1082,10 @@ canvas {
 
 @media screen and (max-width: 500px) {
 
+    #bubbles-canvas {
+        display: none;
+    }
+
     #animated-box {
         position: absolute;
         left: 50%;
@@ -1214,9 +1223,7 @@ canvas {
     }
 
     #bubbles-wrapper {
-        top: 75%;
-        left: 50%;
-        margin-left: -25px;
+        display: none;
     }
 
     #bubbles-text {

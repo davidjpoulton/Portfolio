@@ -15,7 +15,7 @@ click.onclick = function() {
         }
     
         const TWO_PI = 2 * Math.PI;
-        const canvas = document.querySelector(`canvas`);
+        const canvas = document.getElementById(`bubbles-canvas`);
         const ctx = canvas.getContext(`2d`);
     
         let w, h, mouse, dots;
