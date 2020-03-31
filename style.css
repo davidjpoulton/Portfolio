@@ -21,7 +21,6 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 
 #current-page {
@@ -228,12 +227,13 @@ body {
     max-height: 100vh;
     opacity: 0;
     transition: opacity .4s ease;
+    
 }
 
 
 .menu li {
-    padding: 2rem;
-    font-size: 2em;
+    padding: .7rem;
+    font-size: 1.7em;
 }
 
 .menu a {
@@ -244,6 +244,24 @@ body {
     color: #55FFEB;
     transition: color .2s ease-in-out;
     font-weight: bold;
+}
+
+#burger-menu-links-title {
+    font-size: 1.8em;
+    color: #B5B5B5;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#burger-menu-links-bottom {
+    font-size: 1.8em;
+    color: #B5B5B5;
+    font-weight: bold;
+    margin-top: 75px;
+}
+
+.burger-icons {
+    margin-top: 20px;
 }
 
 /* -------------------------------------------------------- */
@@ -753,6 +771,10 @@ body {
     text-shadow: 0 0 5px rgb(0, 0, 0);
 }
 
+#skills-page {
+    overflow: hidden;
+}
+
 #skills-title {
     position: absolute;
     width: 200px ;
@@ -909,6 +931,171 @@ body {
 }
 
 /* ------------------------------------------------*/
+
+/* Work Page*/
+/* --------------------------------------------------------*/
+
+#work-title {
+    color: #55FFEB;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3.6em;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+#work-container {
+    margin: 0 20%;
+}
+
+#work-section-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+#work-section-1 h1 {
+    font-size: 2em;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.work-description {
+    font-size: 1.1em;
+    color: white;
+    margin-bottom: 50px;
+}
+
+#jade-desktop {
+    width: 100%;
+    height: auto;
+}
+
+#jade-tablet {
+    width: 100%;
+    height: auto;
+}
+
+#jade-mobile {
+    width: 100%;
+    height: auto;
+}
+
+#work-container h4 {
+    text-align: center;
+    color: white;
+    margin: 20px 0;
+}
+
+.tablet {
+    width: 65%;
+}
+
+.mobile {
+    width: 27.5%;
+}
+
+.work-tablet-mobile {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 60px;
+}
+
+.work-button {
+    width: 200px;
+    height: 55px;
+    top: 10px;
+    background: #353535;
+    border: 2px solid #55FFEB;
+    box-sizing: border-box;
+    font-size: 1.1em;
+    color: white;
+    font-family: "Philosopher";
+    transition: all 0.1s ease;
+    text-align: center;
+    line-height: 51px;
+}
+
+.work-button:hover {
+    box-shadow: 0 0 10px 3px #55FFEB;
+    cursor: pointer;
+}
+
+.work-divider {
+    width: 100%;
+    height: 1px;
+    background-color: #55FFEB;
+    margin: 100px 0;
+}
+
+
+#work-section-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+#work-section-2 h1 {
+    font-size: 2em;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.work-description {
+    font-size: 1.1em;
+    color: white;
+    margin-bottom: 50px;
+}
+
+#blossom-desktop {
+    width: 100%;
+    height: auto;
+}
+
+#blossom-tablet {
+    width: 100%;
+    height: auto;
+}
+
+#blossom-mobile {
+    width: 100%;
+    height: auto;
+}
+
+#work-section-3 h1 {
+    font-size: 2em;
+    color: white;
+    margin-bottom: 30px;
+}
+
+#work-section-4 h1 {
+    font-size: 2em;
+    color: white;
+    margin-bottom: 30px;
+}
+
+#work-body-tag-bottom {
+    margin: 30px 0 30px 50px;
+    color: #676767;
+    font-family: "Kristi";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+}
+
+.work-icons-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+/* ------------------------------------------------*/
+
 canvas {
     position: absolute;
     right: 1px;
@@ -1186,14 +1373,14 @@ canvas {
     .introduction {
         position: absolute;
         top: 50%;
-        margin-top: -201px;
+        margin-top: -130px;
         left: 50%;
         margin-left: -163px;
         text-align: center;
     }
 
     #logo {
-        font-size: 1.3em;
+        font-size: 2em;
         top: 23px;
         left: 5%;
     }
@@ -1244,6 +1431,60 @@ canvas {
 
     #bubbles-text {
         display: none;
+    }
+
+    #about-me-title {
+        top: 15%;
+        left: 10%;
+        font-size: 3em;
+        width: 80%;
+    }
+
+    #about-box {
+        position: absolute;
+        left: 10%;
+        top: 40%;
+        width: 90%;
+    }
+
+    #work-container {
+        margin: 0 5%;
+    }
+
+    #contact-title {
+        top: 70px;
+        line-height: 108px;
+    }
+    
+    #contact-text {
+        top: 180px;
+        line-height: 23px;
+        font-size: .9em;
+        width: 95%;
+        left: 0;
+        margin-left: 10px;
+    }
+    
+    #form-container {
+        top: 320px;
+        width: 100%;
+        left: 0;
+        margin-left: -0;
+    
+    }
+
+    #form-message {
+        height: 80px;
+    }
+
+    #work-title {
+        margin: 30px 5% 60px;
+        font-size: 3em;
+        text-align: left;
+    }
+
+    #work-container p {
+        font-size: 1em;
     }
 }
 

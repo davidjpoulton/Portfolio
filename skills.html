@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html id="skills-page" lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -17,16 +17,19 @@
     <nav class="nav">
         <div class="menu-wrap">
             <input type="checkbox" class="toggler">
-            <div class="hamburger"><div></div></div>
+            <div class="hamburger">
+                <div></div>
+            </div>
             <div class="menu">
                 <div>
                     <div>
+                        <p id="burger-menu-links-title">What are you looking for?</p>
                         <ul>
                             <li>
                                 <a href="index.html">Home</a>
                             </li>
                             <li>
-                                <a id="current-page" href="skills.html">Skills</a>
+                                <a href="skills.html">Skills</a>
                             </li>
                             <li>
                                 <a href="about.html">About Me</a>
@@ -38,17 +41,42 @@
                                 <a href="contact.html">Contact</a>
                             </li>
                         </ul>
+                        <p id="burger-menu-links-bottom">Follow Me!</p>
+                        <div class="display-none burger-icons">
+                            <a href="">
+                                <img class="icons" src="imgs/Linked-in.png" alt="">
+                            </a>
+                            <a href="">
+                                <img class="icons" src="imgs/github.png" alt="">
+                            </a>
+                            <a href="">
+                                <img class="icons" src="imgs/twitter.png" alt="">
+                            </a>
+                            <a href="">
+                                <img id="code-pen" src="imgs/code-pen.png" alt="">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <a href="index.html">
-            <h2 id="logo">David Wilson</h2>
+        <a id="logo" href="index.html">
+            <span class="logo-hover">D</span>
+            <span class="logo-hover">a</span>
+            <span class="logo-hover">v</span>
+            <span class="logo-hover">i</span>
+            <span class="logo-hover">d</span>
+            <span id="ml" class="logo-hover">W</span>
+            <span class="logo-hover">i</span>
+            <span class="logo-hover">l</span>
+            <span class="logo-hover">s</span>
+            <span class="logo-hover">o</span>
+            <span class="logo-hover">n</span>
         </a>
         <div class="links">
             <ul>
                 <li>
-                    <a id="current-page" class="link-text" href="skills.html">Skills</a>
+                    <a class="link-text" href="skills.html">Skills</a>
                 </li>
                 <li>
                     <a class="link-text" href="about.html">About</a>
@@ -61,8 +89,9 @@
                 </li>
             </ul>
         </div>
-        <h5 id="body-tag-top">&lt;body&gt;</h5>
+        <h5 id="body-tag-top-animated">&lt;body&gt;</h5>
     </nav>
+    
     <h1 id="skills-title">Skills & Experience</h1>
     <div id="skills-text">
         <p>My skills are focused towards front-end development & design.</p>
@@ -775,7 +804,6 @@
     
                 </pre>
         </div>
-        <button onclick="enlargeBox()" class="enlarge-button">Enlarge Box</button>
     </section>
 
     <!--HTML code that appears when "HTML" is clicked-->
@@ -905,7 +933,6 @@
     &lt;html>
                 </pre>
         </div>
-        <button class="enlarge-button">Enlarge Box</button>
     </section>
 
     <!--JavaScript code that appears when "JavaScript" is clicked-->
@@ -983,7 +1010,6 @@
     
                 </pre>
         </div>
-        <button class="enlarge-button">Enlarge Box</button>
     </section>
 
     <!-- animated floating box -->

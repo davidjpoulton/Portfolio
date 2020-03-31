@@ -1,7 +1,9 @@
-portfolio site TODO
+David Wilson - Portfolio
 
-> bug in the code box needs sorting out.
+Hello and welcome to my portfolio!
 
-> make mobile / burger
+This site is used to showcase my work and to get into contact with me.
 
-> cannot click button on home page due to canvas.
+So have a browse and i'll look forward to speaking with you soon.
+
+David.

@@ -55,17 +55,6 @@ function toggleJs() {
     } 
 }
 
-//Enlarge the code example box
-function enlargeBox() {
-    let button = document.getElementsByClassName ("enlarge-button");
-    let title = document.getElementById("skills-title");
-    let content = document.getElementById("skills-text");
-    let box = document.getElementsByClassName("code-box");
-
-    content.style.display = "none";
-    title.style.display = "none";
-}
-
 
 
 
