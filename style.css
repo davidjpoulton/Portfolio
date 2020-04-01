@@ -1454,6 +1454,8 @@ canvas {
     #contact-title {
         top: 70px;
         line-height: 108px;
+        font-size: 3em;
+        margin-left: -124px;
     }
     
     #contact-text {
