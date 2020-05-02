@@ -1,4 +1,13 @@
+//fade animated box in when page loads
+let box = document.querySelector("#animated-box");
 
+function loadBox() {
+    box.style.opacity = "1";
+}
+
+
+
+// JQUERY
 // function to fadeout the floating box on click and fade in the code box
 $(document).ready(function(){
     $(".box").click(function(){
