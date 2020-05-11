@@ -11,17 +11,17 @@ click.onclick = function() {
             mouseSize: 100,
             massFactor: 0.002,
             defColor: `rgba(85, 255, 235, 0.9)`,
-            smooth: 0.9,
+            smooth: 0.5,
         }
     
         const TWO_PI = 2 * Math.PI;
         const canvas = document.getElementById(`bubbles-canvas`);
         const ctx = canvas.getContext(`2d`);
-    
+        
         let w, h, mouse, dots;
     
         class Dot {
-            constructor(r) {
+            constructor(r) { 
                 this.pos = { x: mouse.x, y: mouse.y }
                 this.vel = { x: 0, y: 0 }
                 this.rad = r || random(config.dotMinRad, config.dotMaxRad);

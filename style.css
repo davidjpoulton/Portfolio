@@ -1128,6 +1128,10 @@ canvas {
     height: 50px;
     border-radius: 100%;
     background-color: #55FFEB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
     animation: floating 2s infinite ease-in-out;
 }
 
