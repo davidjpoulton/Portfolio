@@ -56,10 +56,15 @@ body {
     flex-direction: row;
 }
 
+.links ul li {
+    margin: 0 40px 0;
+}
+
 .links a {
     animation: color;
     padding-bottom: 18px;
     letter-spacing: 1px;
+
 }
 
 .links a:hover {
@@ -75,7 +80,11 @@ body {
     font-size: 1.6em;
     line-height: 40px;
     letter-spacing: 0.025em;
-    padding: 0 40px 0 
+}
+
+.link-highlight {
+    color: #55FFEB;
+    font-style: italic;
 }
 
 #nav-social {
@@ -424,7 +433,7 @@ body {
     font-family: "Kristi";
     font-style: normal;
     font-weight: normal;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 #body-tag-top-animated {
@@ -435,7 +444,7 @@ body {
     font-family: "Kristi";
     font-style: normal;
     font-weight: normal;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 #body-tag-bottom-animated {
@@ -446,7 +455,7 @@ body {
     font-family: "Kristi";
     font-style: normal;
     font-weight: normal;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 #body-tag-bottom {
@@ -457,7 +466,7 @@ body {
     font-family: "Kristi";
     font-style: normal;
     font-weight: normal;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .introduction {
@@ -1097,7 +1106,7 @@ body {
     margin-bottom: 100px;
     opacity: 0;
     transition: all .8s ease;
-    transition-delay: .4s;
+    transition-delay: .3s;
     transform: translateY(-20px);
 }
 
@@ -1184,6 +1193,7 @@ body {
     text-align: center;
     z-index: 999;
     color: white;
+    width: 90%;
 }
 
 .pos1 {
@@ -1232,7 +1242,7 @@ body {
 #arrows-container {
     position: relative;
     width: 100%;
-    bottom: 5px;
+    top: 3vh;
     display: flex;
     justify-content: center;
     margin: -20px auto 0;
@@ -1247,19 +1257,6 @@ body {
     margin: 0 70px;
     cursor: pointer;
 }
-
-#work-body-tag-bottom {
-    position: absolute;
-    bottom: 7px;
-    left: -35px;
-    margin: 30px 0 30px 50px;
-    color: #676767;
-    font-family: "Kristi";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 40px;
-}
-
 /* ------------------------------------------------*/
 
 canvas {
