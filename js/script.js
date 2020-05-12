@@ -94,14 +94,17 @@ navSocial.addEventListener("mouseleave", () => {
 
 //Work page sliding element
 
-let img1 = document.querySelector(".img1")
-let img2 = document.querySelector(".img2")
-let img3 = document.querySelector(".img3")
-let img4 = document.querySelector(".img4")
-let img5 = document.querySelector(".img5")
-let img6 = document.querySelector(".img6")
-let scrollLeft = document.querySelector("#arrow-back")
-let scrollRight = document.querySelector("#arrow-forward")
+let img1 = document.querySelector(".img1");
+let img2 = document.querySelector(".img2");
+let img3 = document.querySelector(".img3");
+let img4 = document.querySelector(".img4");
+let img5 = document.querySelector(".img5");
+let img6 = document.querySelector(".img6");
+let scrollLeft = document.querySelector("#arrow-back");
+let scrollRight = document.querySelector("#arrow-forward");
+let workDisplay = document.querySelector("#work-display");
+let workTitle = document.querySelector("#work-title");
+let arrowContainer = document.querySelector("#arrows-container");
 
 scrollLeft.addEventListener("click", shiftLeft);
 scrollRight.addEventListener("click", shiftRight);
@@ -117,6 +120,14 @@ window.addEventListener('wheel', function(event)
   shiftRight();
  }
 });
+
+function loadWork() {
+    workDisplay.style.opacity = "1";
+    workDisplay.style.transform = "translateY(0)";
+    workTitle.style.transform = "translateY(0)";
+    workTitle.style.opacity = "1";
+    arrowContainer.style.opacity = "1";
+}
 
 function shiftLeft () {
     if (img1.classList.contains("pos1")) {
@@ -298,7 +309,7 @@ function shiftRight () {
         img5.classList.add("pos5")
         img5.classList.remove("pos4")
         img6.classList.add("pos6")
-        img6.classList.remove("pos5 ")
+        img6.classList.remove("pos5")
     }
 }
 
