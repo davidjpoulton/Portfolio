@@ -1,3 +1,7 @@
+
+
+
+
 // JQUERY
 // function to fadeout the floating box on click and fade in the code box
 $(document).ready(function(){
