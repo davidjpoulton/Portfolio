@@ -14,7 +14,7 @@ a {
 }
 
 body {
-    background: linear-gradient(119.62deg, #272727 15.82%, #1d1d1d 114.38%);
+    background: linear-gradient(119.62deg, #272727 15.82%, #333333 114.38%);
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: "Philosopher";
@@ -1257,6 +1257,37 @@ body {
     margin: 0 70px;
     cursor: pointer;
 }
+
+#mobile-work {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 60px;
+    width: 90%;
+    display: none;
+}
+
+.mobile-work-section {
+    margin: 20px auto;
+}
+
+#mobile-work img {
+    width: 100%;
+}
+
+#mobile-work h1 {
+    color: white;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+#mobile-work h4 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
 /* ------------------------------------------------*/
 
 canvas {
@@ -1456,6 +1487,10 @@ canvas {
 
 @media screen and (max-width: 500px) {
 
+    .nav {
+        height: 60px;
+    }
+
     #bubbles-canvas {
         display: none;
     }
@@ -1464,7 +1499,7 @@ canvas {
         position: absolute;
         left: 50%;
         margin-left: -50px;
-        top: 50%;
+        top: 60%;
         height: 100px;
         width: 100px; 
         z-index: 1;
@@ -1486,6 +1521,10 @@ canvas {
         top: 15%;
         left: 26%;
         height: 60px;
+    }
+
+    #jquery-png {
+        display: none;
     }
 
     #js-png {
@@ -1544,7 +1583,7 @@ canvas {
     .introduction {
         position: absolute;
         top: 50%;
-        margin-top: -130px;
+        margin-top: -260px;
         left: 50%;
         margin-left: -163px;
         text-align: center;
@@ -1552,13 +1591,12 @@ canvas {
 
     #logo {
         font-size: 2em;
-        top: 23px;
+        top: 17px;
         left: 5%;
     }
 
     .button {
         margin: 0;
-     
         width: 200px;
     }
 
@@ -1651,13 +1689,32 @@ canvas {
     }
 
     #work-title {
-        margin: 30px 5% 60px;
+        margin: 30px 5% 0px;
         font-size: 3em;
         text-align: left;
+        animation: none;
     }
 
     #work-container p {
         font-size: 1em;
+    }
+
+    #work-display {
+        display: none;
+    }
+    #arrows-container {
+        display: none;
+    }
+
+    #work-title {
+        font-size: 7vw;
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    #mobile-work {
+        display: block;
     }
 }
 
