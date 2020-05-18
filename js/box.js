@@ -5,11 +5,17 @@
 // JQUERY
 // function to fadeout the floating box on click and fade in the code box
 $(document).ready(function(){
-    $(".box").click(function(){
-        $("#animated-box").fadeToggle();
-        $("#box-text").fadeToggle();
-        $("#css-box").delay(600).fadeToggle();
-    });
+    if ($(window).width() < 500) {
+        $('.box').off('click');
+    }
+    else {
+        $(".box").click(function(){
+            $("#animated-box").fadeToggle();
+            $("#box-text").fadeToggle();
+            $("#css-box").delay(600).fadeToggle();
+        });
+    }
+    
 });
 
 //function to let the user go back to the floating box if the arrow is pressed
@@ -22,6 +28,8 @@ $(document).ready(function(){
         $("#js-box").fadeOut(); 
     });
 });
+
+
 
 function toggleHtml() {
     let cssBox = document.getElementById("css-box")
